@@ -9,9 +9,7 @@ layout: default
 	</header>
 
 	<article class="post-content">
-		<a href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}" title="Play">
-			<img src="{{ site.photo-server-domain | replace:'http://','//' }}{{ page.image }}!1x" srcset="{{ site.photo-server-domain | replace:'http://','//' }}{{ page.image }}!2x 2x" class="img-photo" alt="{{ post.title }}" />
-		</a>
+		<img src="{{ site.photo-server-domain | replace:'http://','//' }}{{ page.image }}!1x" srcset="{{ site.photo-server-domain | replace:'http://','//' }}{{ page.image }}!2x 2x" class="img-photo" alt="{{ post.title }}" />
 		{{ content }}
 		{% if page.exif %}
 		<div id="exif"><div class="mw-ajax-loader" style="background-position: left"></div></div>

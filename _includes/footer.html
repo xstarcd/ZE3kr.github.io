@@ -9,7 +9,7 @@
 	  </nav>
 	  <div class="footer-col-1 column">
 		  <ul>
-			  <li>File is hosted on <a href="https://www.upyun.com/" target="_blank"><img src="//tlimage.b0.upaiyun.com/upyun/90.png" srcset="//tlimage.b0.upaiyun.com/upyun/180.png 2x" alt="UPYUN" style="width: 90px"></a></li>
+			  <li>File is hosted on <a href="https://www.upyun.com/" target="_blank"><img src="{{ site.photo-server-domain | replace:'http://','//' }}upyun/90.png" srcset="{{ site.photo-server-domain | replace:'http://','//' }}upyun/180.png 2x" alt="UPYUN" style="width: 90px"></a></li>
 			  <li>
 				  {% if page.copyright %}{% if page.copyright_link %}<a href="{{ page.copyright_link }}">{% endif %}&#xA9;ZE3kr. {{ page.copyright | xml_escape }}{% if page.copyright_link %}</a>{% endif %}
 				  {% else %}{% if site.copyright_link %}<a href="{{ site.copyright_link }}">{% endif %}&#xA9;ZE3kr. {{ site.copyright | xml_escape }}{% if site.copyright_link %}</a>{% endif %}{% endif %}
