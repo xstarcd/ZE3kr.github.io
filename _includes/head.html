@@ -1,0 +1,47 @@
+<head>
+    <meta charset="utf-8">
+	<meta http-equiv="Access-Control-Allow-Origin" content="https://imgcdn.tlum.net">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>{{ page.title }}{% if paginator.previous_page %} (Page {{ paginator.page }}){% endif %}{% if page.title %}{% if page.nositename %}{% else %} | {% endif %}{% endif %}{% if page.nositename %}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    {% if page.subtitle %}<meta name="description" content="{{ page.subtitle }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url }}">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" href="{{ site.small-avatarurl }}">
+    <link rel="alternate" type="application/rss+xml" href="/feed.xml">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="//tlumn.b0.upaiyun.com/thrideo/css/main.css">
+	<script type="text/javascript" src="//tlumn.b0.upaiyun.com/js/video.js" async></script>
+	<style type="text/css">
+		.site-header {
+			border-top: 5px solid {{ site.data.color.header.top }};
+			border-bottom: 1px solid {{ site.data.color.solid }};
+		}
+
+		.site-footer {
+			border-top: 1px solid {{ site.data.color.solid }};
+			background-color: {{ site.data.color.bottom.background }};
+			padding: 30px 0 0 0;
+		}
+
+		.posts .post-date { color: {{ site.data.color.post_date }}; }
+
+		.site-title,
+		.site-title:hover,
+		.site-title:visited { color: {{ site.data.color.title }}; }
+
+		.post-header h1,
+		.posts .post-link { color: {{ site.data.color.post_title }}; }
+
+		.site-nav .menu-icon { color: {{ site.data.color.nav }}; }
+		.site-nav .page-link { color: {{ site.data.color.nav_link }}; }
+	</style>
+
+	<meta property="og:type" content="{% if page.notpost %}webpage{% else %}{% if page.categories.audio %}audio{% endif %}{% if page.categories.photo %}image{% endif %}{% if page.categories.video %}video{% endif %}{% if page.categories.post %}article{% endif %}{% endif %}" />
+	<meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+	<meta property="og:description" content="{{ page.subtitle }}" />
+	<meta property="og:site_name" content="{{ site.title }}" />
+	{% if page.video-image %}<meta property="og:image" content="{{ site.photo-server-domain }}{{ page.video-image }}!s" />{% endif %}
+  {% include script.html %}
+</head>

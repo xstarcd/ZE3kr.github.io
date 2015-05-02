@@ -1,0 +1,41 @@
+video-server-domain: "http://tlumn.b0.upaiyun.com/"
+sd-video-server-domain: "http://tlumn.b0.upaiyun.com/"
+photo-server-domain: "http://imgcdn.tlum.net/"
+
+# 网页设置
+title: "ZE3kr"
+description: "Welcome!"
+small-avatarurl: "https://tlimage.b0.upaiyun.com/thrideo/ze3kr_s.jpg"
+avatarurl: "https://tlimage.b0.upaiyun.com/thrideo/ze3kr.jpg"
+branch: gh-pages
+itunes: https://itunes.apple.com/podcast/id907999392?at=10lJIS
+copyright: CC BY-NC-SA 3.0.
+copyright_link: https://creativecommons.org/licenses/by-nc-sa/3.0/
+
+language: en-us
+explicit: "no"
+
+google_analytics: 
+  enable: yes
+  id: "UA-47292820-8"
+
+email: "admin@ze3kr.com"
+twitter_username: "ZE3kr"
+
+# 建站设置
+markdown: kramdown
+permalink: /:year/:month/:title.html
+
+# 页码设置
+paginate: 15
+paginate_path: "page/:num/"
+
+# 第三方评论窗
+duoshuo: 
+  enable: yes
+  id: "ze3kr"
+
+# 分享按钮
+addthis: 
+  enable: yes
+  addthis_pubid: "ra-53c5146c23971c64"

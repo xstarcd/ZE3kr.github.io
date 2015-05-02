@@ -1,0 +1,54 @@
+---
+layout: default
+---
+<div class="post">
+
+	<header class="post-header">
+		<h1>{{ page.title }}</h1>
+		<p class="meta">{% if page.date %}{{ page.date | date: "%b %d %Y" }}{% endif %}{% if page.author %}{% if page.date %} • {% endif %}<span class="author">{{ page.author }}</span>{% endif %}{% if page.subtitle %} • {{ page.subtitle }}{% endif %}</p>
+	</header>
+
+	<article class="post-content">
+		<a href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}" title="Play">
+			<img src="{{ site.photo-server-domain | replace:'http://','//' }}{{ page.image }}!1x" srcset="{{ site.photo-server-domain | replace:'http://','//' }}{{ page.image }}!2x 2x" class="img-photo" alt="{{ post.title }}" />
+		</a>
+		{{ content }}
+		{% if page.exif %}
+		<div class="mw-ajax-loader" style="background-position: left"></div>
+		<ul id="exif" style="display:none"><i>
+			<li><b>Camera:</b> <span id="exifCamera"></span></li>
+			<li><b>ISO:</b> <span id="exifIso"></span></li>
+			<li><b>Aperture:</b> <span id="exifAperture"></span></li>
+			<li><b>Exposure:</b> <span id="exifExposure"></span></li>
+			<li><b>Focal Length:</b> <span id="exifLength"></span></li>
+			<li><b>Lens:</b> <span id="exifLens"></span></li>
+		</i></ul>
+		{% endif %}
+		<hr />
+
+		<footer class="post-footer site-footer" id="footer">
+			{% if page.tags %}
+			<p><svg class="svg-tag"></svg>Tags: 
+				{% for tag in page.tags %}#{{ tag }}&nbsp;{% endfor %}
+			</p>
+			{% endif %}
+			{% if page.nocomment %}{% else %}<div id="disqus_thread"></div>{% endif %}
+		</footer>
+	</article>
+
+</div>
+{% if page.exif %}
+<script type="text/javascript" src="//tlumn.b0.upaiyun.com/chinajs/jquery/jquery-2.0.min.js"></script>
+<script>
+$.getJSON("{{ site.photo-server-domain | replace:'http://','https://' }}{{ page.image }}!exif.json", function(data){
+	$('#exifCamera').html(data.EXIF.Model);
+	$('#exifIso').html(data.EXIF.ISOSpeedRatings);
+	$('#exifAperture').html(data.EXIF.ApertureValue);
+	$('#exifExposure').html(data.EXIF.ExposureTime);
+	$('#exifLength').html(data.EXIF.FocalLength);
+	$('#exifLens').html(data.EXIF.ꐴ);
+	$('#exif').show;
+	$('.mw-ajax-loader').hide;
+})
+</script>
+{% endif %}

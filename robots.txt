@@ -1,0 +1,6 @@
+Sitemap: http://v.ze3kr.com/sitemap.xml
+
+User-agent: *
+Disallow: /frame
+
+Crawl-delay: 1

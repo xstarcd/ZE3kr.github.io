@@ -1,0 +1,1756 @@
+/* Base */
+/* ----------------------------------------------------------*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html, body { height: 100%; }
+
+body {
+	font-family: "Source Sans Pro", source-sans-pro, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 300;
+	background-color: #fdfdfd;
+}
+
+h1, h2, h3, h4, h5, h6 { font-weight: 400; }
+
+hr {
+	background-color: #000;
+	height: 1px;
+	border-width: 0px;
+	margin: 20px 0 20px 0
+}
+
+a				 { color: #2a7ae2; text-decoration: none; }
+a:hover	 { color: #000; text-decoration: underline; }
+a:visited { color: #205caa; }
+
+strong, b{ font-weight: 600; }
+
+img, iframe, video { 
+	width: 100%;
+}
+
+.post-footer {
+	margin: 0!important;
+	padding: 0!important;
+}
+
+.tumblr_controls,
+.floatAd,
+#floatAd {
+	display: none!important;
+}
+
+.retro_static {
+	opacity: .03;
+	filter: alpha(Opacity=03);
+	-moz-opacity: 0.03;
+	width: 100%;
+	width: -webkit-calc(100% - 60px);
+	width: -moz-calc(100% - 60px);
+	width: -o-calc(100% - 60px);
+	width: calc(100% - 60px);
+	max-width: 800px;
+	background: transparent url('//technolumn.b0.upaiyun.com/thrideo/video_static_animated.gif') 0 0 repeat;
+	position: absolute;
+	z-index: 5;
+}
+
+.author p{
+	display: inline-block;
+}
+
+/* Utility */
+
+.wrap:before,
+.wrap:after { content:""; display:table; }
+.wrap:after { clear: both; }
+.wrap {
+	max-width: 800px;
+	padding: 0 30px;
+	margin: 0 auto;
+	zoom: 1;
+}
+
+.warp-photo { max-width: 825px!important; }
+
+
+/* Layout Styles */
+/* ----------------------------------------------------------*/
+
+/* Site header */
+
+.site-header {
+	min-height: 56px;
+}
+
+.background-div {
+	height: 56px;
+	width: 100%;
+	position: absolute;
+	top: 5px;
+	z-index: -1;
+	overflow: hidden;
+	background-color: #f05909;
+}
+
+.background-img {
+	height: 112px;
+	max-width: none;
+	position: absolute;
+	width: 516px; 
+	top: -42px;
+	right: -60px; 
+	left: initial!important;
+}
+
+.site-title,
+.site-title:hover,
+.site-title:visited {
+	font-family: "Myriad Pro", myriad-pro, nimbus-sans, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+	font-weight: 400;
+	display: block;
+	font-size: 26px;
+	float: left;
+	line-height: 56px;
+	position: relative;
+	z-index: 1;
+	text-shadow: 2px 2px 5px #732b04;
+}
+
+.site-nav {
+	float: right;
+	line-height: 56px;
+	position: absolute;
+	right: 3em;
+}
+
+.site-nav .menu-icon { display: none; }
+.site-nav .menu-hide { display: none; }
+
+.site-nav .page-link {
+	font-family: "Myriad Pro", myriad-pro, nimbus-sans, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+	font-weight: 400;
+	margin-left: 20px;
+	text-shadow: 2px 2px 5px #848484;
+}
+
+div.swiftype div.st-result-listing div.st-result div.st-result-text h3 {
+	font-size: 20px!important;
+}
+
+/* Site footer */
+
+.site-footer {
+	padding: 30px 0;
+}
+
+.footer-heading {
+	font-size: 18px;
+	font-weight: 700;
+	margin-bottom: 15px;
+	color: #000;
+}
+
+.site-footer .column { float: left; margin-bottom: 15px; letter-spacing: -0.2px; }
+
+.footer-col-nav {
+	width: 150px; /*fallback*/
+	width: -webkit-calc(20% - 10px);
+	width: -moz-calc(20% - 10px);
+	width: -o-calc(20% - 10px);
+	width: calc(20% - 10px);
+	margin-right: 10px
+}
+
+.footer-col-search {
+	width: 320px; /*fallback*/
+	width: -webkit-calc(40%);
+	width: -moz-calc(40%);
+	width: -o-calc(40%);
+	width: calc(40%);
+}
+
+.index-photo {
+	width: 200px;
+	height: 113px;
+}
+
+input[type=text]:focus {
+	outline: none;
+	border-color: #51a7e8;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.075), 0 0 5px rgba(81,167,232,.5);
+}
+
+input[type=text] {
+	font-size: 13px;
+	min-height: 32px;
+	margin: 0;
+	padding: 7px 8px;
+	outline: none;
+	color: #333;
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-position: right center;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,0.075);
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all 0.15s ease-in;
+	transition: all 0.15s ease-in;
+	vertical-align: middle;
+	width: -webkit-calc(100% - 130px);
+	width: -moz-calc(100% - 130px);
+	width: -o-calc(100% - 130px);
+	width: calc(100% - 130px);
+}
+
+.button {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 8px 15px;
+	font-size: 13px;
+	font-weight: bold;
+	color: #333;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.9);
+	white-space: nowrap;
+	background-color: #eaeaea;
+	background-image: -moz-linear-gradient(#fafafa, #eaeaea);
+	background-image: -webkit-linear-gradient(#fafafa, #eaeaea);
+	background-image: linear-gradient(#fafafa, #eaeaea);
+	background-repeat: repeat-x;
+	border-radius: 3px;
+	border: 1px solid #ddd;
+	border-bottom-color: #c5c5c5;
+	box-shadow: 0 1px 3px rgba(0,0,0,.05);
+	vertical-align: middle;
+	cursor: pointer;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-appearance: none;
+}
+
+iframe[src^="//instagram"], 
+iframe[src^="http://sports.yahoo"] {
+		height: auto!important;
+}
+
+.audio_container {
+		overflow: hidden;
+		position: relative;
+}
+
+.soundcloud_audio_player, 
+.spotify_audio_player, 
+.tumblr_audio_player, 
+.audio_container, 
+iframe[src^="//instagram"], 
+iframe[src^="http://sports.yahoo"], 
+.tumblr_video_iframe, 
+.html_photoset iframe,
+.tumblr_video_container,
+.video-post a {
+	width: 100%!important;
+	width: -webkit-calc(100%)!important;
+	width: -moz-calc(100%)!important;
+	width: -o-calc(100%)!important;
+	width: calc(100%)!important;
+	overflow: hidden;
+}
+
+.tumblr_audio_player {
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+}
+
+.footer-col-1 {
+	width: 100%; 
+}
+
+.site-footer ul { list-style: none; }
+
+.site-footer li,
+.site-footer p {
+	font-size: 15px;
+	color: #828282;
+}
+
+.github-icon-svg,
+.twitter-icon-svg,
+.icon-svg {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	position: relative;
+	top: 3px;
+}
+
+.username {
+	color: #828282!important
+}
+
+
+/* Page Content styles */
+/* ----------------------------------------------------------*/
+
+.page-content {
+	padding: 30px 0;
+	background-color: #fff;
+	overflow: hidden;
+}
+
+.video,
+.video-post a,
+.tumblr_video_container,
+.tumblr_video_iframe { height: 450px!important; }
+
+.goog-logo-link img { width: 37px; }
+
+/* Home styles */
+/* ----------------------------------------------------------*/
+
+.top {
+	font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.ad {
+	font-size: 16px !important;
+	color: red!important;
+	letter-spacing: -0.5px!important;
+}
+
+.posts { list-style-type: none; }
+.posts .post { margin-bottom: 30px; }
+
+.posts .post-link {
+	font-size: 24px;
+	line-height: 1;
+	font-family: "Source Sans Pro", source-sans-pro, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+}
+
+.posts .post-date {
+	font-size: 15px;
+	letter-spacing: -0.5px;
+	display: inline-block;
+	color: #ff8434;
+	font-weight: bold;
+}
+
+.gray {
+	color: #818181!important;
+	font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+}
+
+.img-div {
+	min-height: 100px;
+}
+
+footer,
+b,
+.trigger,
+.post-date,
+.rss-subscribe
+{ font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif; }
+
+
+/* Post styles */
+/* ----------------------------------------------------------*/
+
+.post-header { margin: 10px 0 0 0; }
+
+.post-header h1 {
+	font-size: 42px;
+	letter-spacing: -0.5px;
+	line-height: 1;
+	font-weight: bold;
+}
+
+.meta {
+	font-size: 15px;
+	letter-spacing: -0.3px;
+	color: #818181;
+	margin-top: 5px;
+	font-family: "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+}
+
+.post-content > * { margin: 20px 0; }
+
+
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4,
+.post-content h5,
+.post-content h6 {
+	line-height: 1;
+	font-weight: bold;
+	margin: 40px 0 20px;
+}
+
+.post-content h2 {
+	font-size: 32px;
+}
+
+.post-content h3 {
+	font-size: 26px;
+}
+
+.post-content h4 {
+	font-size: 20px;
+}
+
+.post-content blockquote {
+	border-left: 4px solid #e8e8e8;
+	padding-left: 20px;
+	font-size: 18px;
+	opacity: .6;
+	font-style: italic;
+	margin: 30px 0;
+}
+
+.post-content ul,
+.post-content ol { padding-left: 20px; }
+
+.post pre,
+.post code {
+	border: 1px solid #d5d5e9;
+	background-color: #eef;
+	padding: 8px 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+	font-size: 15px;
+	overflow:scroll;
+}
+
+.post code { padding: 1px 5px; }
+
+.post ul,
+.post ol { margin-left: 1.35em; }
+
+.post pre code {
+	border: 0;
+	padding-right: 0;
+	padding-left: 0;
+}
+
+/* terminal */
+.post pre.terminal {
+	border: 1px solid #000;
+	background-color: #333;
+	color: #FFF;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.post pre.terminal code { background-color: #333; }
+
+/* Syntax highlighting styles */
+/* ----------------------------------------------------------*/
+
+.highlight	{ background: #ffffff; }
+.highlight .c { color: #999988; font-style: italic } /* Comment */
+.highlight .err { color: #a61717; background-color: #e3d2d2 } /* Error */
+.highlight .k { font-weight: bold } /* Keyword */
+.highlight .o { font-weight: bold } /* Operator */
+.highlight .cm { color: #999988; font-style: italic } /* Comment.Multiline */
+.highlight .cp { color: #999999; font-weight: bold } /* Comment.Preproc */
+.highlight .c1 { color: #999988; font-style: italic } /* Comment.Single */
+.highlight .cs { color: #999999; font-weight: bold; font-style: italic } /* Comment.Special */
+.highlight .gd { color: #000000; background-color: #ffdddd } /* Generic.Deleted */
+.highlight .gd .x { color: #000000; background-color: #ffaaaa } /* Generic.Deleted.Specific */
+.highlight .ge { font-style: italic } /* Generic.Emph */
+.highlight .gr { color: #aa0000 } /* Generic.Error */
+.highlight .gh { color: #999999 } /* Generic.Heading */
+.highlight .gi { color: #000000; background-color: #ddffdd } /* Generic.Inserted */
+.highlight .gi .x { color: #000000; background-color: #aaffaa } /* Generic.Inserted.Specific */
+.highlight .go { color: #888888 } /* Generic.Output */
+.highlight .gp { color: #555555 } /* Generic.Prompt */
+.highlight .gs { font-weight: bold } /* Generic.Strong */
+.highlight .gu { color: #aaaaaa } /* Generic.Subheading */
+.highlight .gt { color: #aa0000 } /* Generic.Traceback */
+.highlight .kc { font-weight: bold } /* Keyword.Constant */
+.highlight .kd { font-weight: bold } /* Keyword.Declaration */
+.highlight .kp { font-weight: bold } /* Keyword.Pseudo */
+.highlight .kr { font-weight: bold } /* Keyword.Reserved */
+.highlight .kt { color: #445588; font-weight: bold } /* Keyword.Type */
+.highlight .m { color: #009999 } /* Literal.Number */
+.highlight .s { color: #d14 } /* Literal.String */
+.highlight .na { color: #008080 } /* Name.Attribute */
+.highlight .nb { color: #0086B3 } /* Name.Builtin */
+.highlight .nc { color: #445588; font-weight: bold } /* Name.Class */
+.highlight .no { color: #008080 } /* Name.Constant */
+.highlight .ni { color: #800080 } /* Name.Entity */
+.highlight .ne { color: #990000; font-weight: bold } /* Name.Exception */
+.highlight .nf { color: #990000; font-weight: bold } /* Name.Function */
+.highlight .nn { color: #555555 } /* Name.Namespace */
+.highlight .nt { color: #000080 } /* Name.Tag */
+.highlight .nv { color: #008080 } /* Name.Variable */
+.highlight .ow { font-weight: bold } /* Operator.Word */
+.highlight .w { color: #bbbbbb } /* Text.Whitespace */
+.highlight .mf { color: #009999 } /* Literal.Number.Float */
+.highlight .mh { color: #009999 } /* Literal.Number.Hex */
+.highlight .mi { color: #009999 } /* Literal.Number.Integer */
+.highlight .mo { color: #009999 } /* Literal.Number.Oct */
+.highlight .sb { color: #d14 } /* Literal.String.Backtick */
+.highlight .sc { color: #d14 } /* Literal.String.Char */
+.highlight .sd { color: #d14 } /* Literal.String.Doc */
+.highlight .s2 { color: #d14 } /* Literal.String.Double */
+.highlight .se { color: #d14 } /* Literal.String.Escape */
+.highlight .sh { color: #d14 } /* Literal.String.Heredoc */
+.highlight .si { color: #d14 } /* Literal.String.Interpol */
+.highlight .sx { color: #d14 } /* Literal.String.Other */
+.highlight .sr { color: #009926 } /* Literal.String.Regex */
+.highlight .s1 { color: #d14 } /* Literal.String.Single */
+.highlight .ss { color: #990073 } /* Literal.String.Symbol */
+.highlight .bp { color: #999999 } /* Name.Builtin.Pseudo */
+.highlight .vc { color: #008080 } /* Name.Variable.Class */
+.highlight .vg { color: #008080 } /* Name.Variable.Global */
+.highlight .vi { color: #008080 } /* Name.Variable.Instance */
+.highlight .il { color: #009999 } /* Literal.Number.Integer.Long */
+
+.video
+{
+	width:100%!important;
+}
+
+/* media queries */
+/* ----------------------------------------------------------*/
+
+@media screen and (max-width: 750px) {
+
+	.video,
+	.video-post a,
+	.tumblr_video_container,
+	.tumblr_video_iframe { height: 365px!important; }
+
+}
+
+@media screen and (max-width: 600px) {
+
+	.video,
+	.video-post a,
+	.tumblr_video_container,
+	.tumblr_video_iframe { height: 338px!important; }
+
+	.img-div {
+		min-height: 90px;
+	}
+
+	.left-image {
+		display: none!important;
+	}
+
+	.post-right {
+		margin-left: 0px!important;
+	}
+
+	.img-photo {
+		width: -webkit-calc(100% + 24px)!important;
+		width: -moz-calc(100% + 24px)!important;
+		width: -o-calc(100% + 24px)!important;
+		width: calc(100% + 24px)!important;
+		position: relative;
+		left: -12px;
+	}
+
+	.retro_static {
+		left: 0!important;
+	}
+
+	.wrap { padding: 0 12px; }
+
+	.post-header h1 { font-size: 36px; }
+	.post-content h2 { font-size: 28px; }
+	.post-content h3 { font-size: 22px; }
+	.post-content h4 { font-size: 18px; }
+	.post-content blockquote { padding-left: 10px; }
+	.post-content ul,
+	.post-content ol { padding-left: 10px; }
+
+	.site-footer .column {
+		float: none;
+		clear: both;
+		width: auto;
+		margin: 0 0 15px; 
+	}
+
+	.background-img {
+		left: 130px!important;
+	}
+
+}
+
+@media screen and (max-device-width: 600px) {
+	.site-nav {
+		position: fixed;
+		z-index: 100;
+		top: 14px; right: 8px;
+		background-color: white;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+		border: 1px solid #e8e8e8;
+	}
+
+	.img-div {
+		min-height: auto!important;
+	}
+
+	.site-nav .menu-icon {
+		display: block;
+		font-size: 24px;
+		float: right;
+		width: 36px;
+		text-align: center;
+		line-height: 36px;
+	}
+
+	.site-nav .page-link {
+		color: #000!important;
+	}
+
+	.site-nav .menu-hide { display: block; }
+
+	.site-nav .menu-icon svg { width: 18px; height: 16px; }
+
+	.site-nav .trigger {
+		clear: both;
+		margin-bottom: 5px;
+		display: none;
+	}
+
+	.site-nav .page-link {
+		display: block;
+		text-align: right;
+		line-height: 1.25;
+		padding: 5px 10px;
+		margin: 0;
+		font-size: 16px;
+		text-shadow: none;
+	}
+	.site-nav:hover .trigger {
+		display: block;
+		padding-bottom: 5px;
+	}
+}
+
+@media screen and (max-width: 427px) {
+	.index-photo {
+		width: 100%;
+		max-width: 300px;
+		height: auto;
+	}
+}
+
+@media screen and (max-width: 450px) {
+
+	.video,
+	.video-post a,
+	.tumblr_video_container,
+	.tumblr_video_iframe { height: 253px!important; }
+
+	.img-div {
+		min-height: 65px;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+	.video,
+	.video-post a,
+	.tumblr_video_container,
+	.tumblr_video_iframe { height: 180px!important; }
+}
+
+code,
+tt,
+kbd,
+samp,
+pre,
+xmp,
+plaintext,
+listing { font-family: bree-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif; }
+
+.svg-play {
+	background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTA4MCAxMDgwIiBzdHlsZT0id2lkdGg6IDcycHg7IGhlaWdodDogNzJweDsgZmlsdGVyOiBhbHBoYShPcGFjaXR5PTkwKTsgLW1vei1vcGFjaXR5OiAwLjk7IG9wYWNpdHk6IDAuOTsgbWluLWhlaWdodDppbmhlcml0OyBwb3NpdGlvbjogYWJzb2x1dGU7IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMDgwIDEwODAiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KPHBhdGggZmlsbD0iIzAwMDAzRSIgZD0iTTU0MCwwYzI5OC4yMywwLDU0MCwyNDEuNzcsNTQwLDU0MHMtMjQxLjc3LDU0MC01NDAsNTQwUzAsODM4LjIzLDAsNTQwUzI0MS43NywwLDU0MCwweiBNMTA0MCw1NDAKYzAtMjc2LjE0LTIyMy44Ni01MDAtNTAwLTUwMFM0MCwyNjMuODYsNDAsNTQwczIyMy44Niw1MDAsNTAwLDUwMFMxMDQwLDgxNi4xNCwxMDQwLDU0MHoiLz4KPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTU0MCw0MGMyNzYuMTQsMCw1MDAsMjIzLjg2LDUwMCw1MDBzLTIyMy44Niw1MDAtNTAwLDUwMFM0MCw4MTYuMTQsNDAsNTQwUzI2My44Niw0MCw1NDAsNDB6CiBNMzg5LjU2LDc5OS44MWw0NTAtMjU5LjgxbC00NTAtMjU5LjgxVjc5OS44MXoiLz4KPHBvbHlnb24gZmlsbD0iIzAwMDAzRSIgcG9pbnRzPSI4MzkuNTYsNTQwIDM4OS41Niw3OTkuODEgMzg5LjU2LDI4MC4xOSIvPgo8L2c+Cjwvc3ZnPg==);
+	background-repeat: no-repeat;
+	width: 72px; height: 72px;
+	filter: alpha(Opacity=90);
+	-moz-opacity: 0.9;
+	opacity: 0.9;
+	min-height:inherit;
+	position: absolute;
+}
+
+.svg-tag {
+	background: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB3aWR0aD0iMjAiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCA1NDQgNTEyIiBmaWxsPSIjODI4MjgyIiBzdHlsZT0idG9wOiAzcHg7cG9zaXRpb246IHJlbGF0aXZlOyI+PHBhdGggZD0iTSA0OTYuMDAsMzIuMDBMIDM4NC4wMCwzMi4wMCBjLTI2LjQwLDAuMDAtNjMuMjczLDE1LjI3My04MS45NDEsMzMuOTQxTCAxMTMuOTQxLDI1NC4wNTljLTE4LjY2NywxOC42NjctMTguNjY3LDQ5LjIxNCwwLjAwLDY3Ljg4MmwgMTQwLjExOCwxNDAuMTE3IGMgMTguNjY3LDE4LjY2OCwgNDkuMjE0LDE4LjY2OCwgNjcuODgyLDAuMDBsIDE4OC4xMTctMTg4LjExN0MgNTI4LjcyNywyNTUuMjczLCA1NDQuMDAsMjE4LjQwLCA1NDQuMDAsMTkyLjAwTCA1NDQuMDAsODAuMDAgQyA1NDQuMDAsNTMuNjAsIDUyMi40MCwzMi4wMCwgNDk2LjAwLDMyLjAweiBNIDQzMi4wMCwxOTIuMDAgYy0yNi41MSwwLjAwLTQ4LjAwLTIxLjQ5LTQ4LjAwLTQ4LjAwcyAyMS40OS00OC4wMCwgNDguMDAtNDguMDBzIDQ4LjAwLDIxLjQ5LCA0OC4wMCw0OC4wMFMgNDU4LjUxLDE5Mi4wMCwgNDMyLjAwLDE5Mi4wMHpNIDQzLjMxMywyOTkuMzEzIEwgMjE0LjUwMiw0NzAuNTAyIEMgMTk2LjM3LDQ4MC4wODIgMTczLjI3MSw0NzcuMjcxIDE1OC4wNTksNDYyLjA1OCBMIDE3Ljk0MSwzMjEuOTQxIEMgLTAuNzI2LDMwMy4yNzMgLTAuNzI2LDI3Mi43MjYgMTcuOTQxLDI1NC4wNTkgTCAyMDYuMDU5LDY1Ljk0MSBDIDIyNC43MjcsNDcuMjczIDI2MS42MCwzMi4wMCAyODguMDAsMzIuMDAgTCA0My4zMTMsMjc2LjY4NiBDIDM3LjA5MSwyODIuOTA5IDM3LjA5MSwyOTMuMDkgNDMuMzEzLDI5OS4zMTMgWiI+PC9wYXRoPjwvc3ZnPg==);
+	background-repeat: no-repeat;
+	width: 20px;
+	height:18px;
+}
+
+.site-nav .menu-icon .svg-1
+{
+	background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMTggMTUiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDE4IDE1IiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0iIzAwNzk3OSIgZD0iTTE4LDEuNDg0YzAsMC44Mi0wLjY2NSwxLjQ4NC0xLjQ4NCwxLjQ4NEgxLjQ4NEMwLjY2NSwyLjk2OSwwLDIuMzA0LDAsMS40ODRsMCwwQzAsMC42NjUsMC42NjUsMCwxLjQ4NCwwaDE1LjAzMUMxNy4zMzUsMCwxOCwwLjY2NSwxOCwxLjQ4NEwxOCwxLjQ4NHoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzAwNzk3OSIgZD0iTTE4LDcuNTE2QzE4LDguMzM1LDE3LjMzNSw5LDE2LjUxNiw5SDEuNDg0QzAuNjY1LDksMCw4LjMzNSwwLDcuNTE2bDAsMGMwLTAuODIsMC42NjUtMS40ODQsMS40ODQtMS40ODRoMTUuMDMxQzE3LjMzNSw2LjAzMSwxOCw2LjY5NiwxOCw3LjUxNkwxOCw3LjUxNnoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzAwNzk3OSIgZD0iTTE4LDEzLjUxNkMxOCwxNC4zMzUsMTcuMzM1LDE1LDE2LjUxNiwxNUgxLjQ4NEMwLjY2NSwxNSwwLDE0LjMzNSwwLDEzLjUxNmwwLDBjMC0wLjgyLDAuNjY1LTEuNDg0LDEuNDg0LTEuNDg0aDE1LjAzMUMxNy4zMzUsMTIuMDMxLDE4LDEyLjY5NiwxOCwxMy41MTZMMTgsMTMuNTE2eiI+PC9wYXRoPgo8L3N2Zz4=);
+	background-repeat: no-repeat;
+}
+
+.site-nav .menu-icon .svg-2
+{
+	background: url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZW5hYmxlLWJhY2tncm91bmQ9Im5ldyAwIDAgMTggMTgiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8cGF0aCBmaWxsPSIjMDA3OTc5IiBkPSJNMTcuNCwxNy40Yy0wLjgsMC44LTIsMC44LTIuOCwwTDAuNiwzLjRjLTAuOC0wLjgtMC44LTIsMC0yLjhsMCwwYzAuOC0wLjgsMi0wLjgsMi44LDBsMTQuMSwxNC4xQzE4LjIsMTUuNCwxOC4yLDE2LjcsMTcuNCwxNy40TDE3LjQsMTcuNHoiPjwvcGF0aD4KPHBhdGggZmlsbD0iIzAwNzk3OSIgZD0iTTE3LjQsMC42YzAuOCwwLjgsMC44LDIsMCwyLjhMMy40LDE3LjRjLTAuOCwwLjgtMiwwLjgtMi44LDBsMCwwYy0wLjgtMC44LTAuOC0yLDAtMi44TDE0LjYsMC42QzE1LjQtMC4yLDE2LjctMC4yLDE3LjQsMC42TDE3LjQsMC42eiI+PC9wYXRoPgo8L3N2Zz4=);
+	background-repeat: no-repeat;
+}
+
+/*!
+Video.js Default Styles (http://videojs.com)
+Version 4.12.5
+Create your own skin at http://designer.videojs.com
+*/
+/* SKIN
+================================================================================
+The main class name for all skin-specific styles. To make your own skin,
+replace all occurrences of 'vjs-default-skin' with a new name. Then add your new
+skin name to your video tag instead of the default skin.
+e.g. <video class="video-js my-skin-name">
+*/
+.vjs-default-skin {
+	color: #cccccc;
+}
+/* Custom Icon Font
+--------------------------------------------------------------------------------
+The control icons are from a custom font. Each icon corresponds to a character
+(e.g. "\e001"). Font icons allow for easy scaling and coloring of icons.
+*/
+@font-face {
+	font-family: 'VideoJS';
+	src: url('font/vjs.eot');
+	src: url('font/vjs.eot?#iefix') format('embedded-opentype'), url('font/vjs.woff') format('woff'), url('font/vjs.ttf') format('truetype'), url('font/vjs.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+/* Base UI Component Classes
+--------------------------------------------------------------------------------
+*/
+/* Slider - used for Volume bar and Seek bar */
+.vjs-default-skin .vjs-slider {
+	/* Replace browser focus highlight with handle highlight */
+	outline: 0;
+	position: relative;
+	cursor: pointer;
+	padding: 0;
+	/* background-color-with-alpha */
+	background-color: #333333;
+	background-color: rgba(51, 51, 51, 0.9);
+}
+.vjs-default-skin .vjs-slider:focus {
+	/* box-shadow */
+	-webkit-box-shadow: 0 0 2em #ffffff;
+	-moz-box-shadow: 0 0 2em #ffffff;
+	box-shadow: 0 0 2em #ffffff;
+}
+.vjs-default-skin .vjs-slider-handle {
+	position: absolute;
+	/* Needed for IE6 */
+	left: 0;
+	top: 0;
+}
+.vjs-default-skin .vjs-slider-handle:before {
+	content: "\e009";
+	font-family: VideoJS;
+	font-size: 1em;
+	line-height: 1;
+	text-align: center;
+	text-shadow: 0em 0em 1em #fff;
+	position: absolute;
+	top: 0;
+	left: 0;
+	/* Rotate the square icon to make a diamond */
+	/* transform */
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+/* Control Bar
+--------------------------------------------------------------------------------
+The default control bar that is a container for most of the controls.
+*/
+.vjs-default-skin .vjs-control-bar {
+	/* Start hidden */
+	display: none;
+	position: absolute;
+	/* Place control bar at the bottom of the player box/video.
+		 If you want more margin below the control bar, add more height. */
+	bottom: 0;
+	/* Use left/right to stretch to 100% width of player div */
+	left: 0;
+	right: 0;
+	/* Height includes any margin you want above or below control items */
+	height: 3.0em;
+	/* background-color-with-alpha */
+	background-color: #07141e;
+	background-color: rgba(7, 20, 30, 0.7);
+}
+/* Show the control bar only once the video has started playing */
+.vjs-default-skin.vjs-has-started .vjs-control-bar {
+	display: block;
+	/* Visibility needed to make sure things hide in older browsers too. */
+
+	visibility: visible;
+	opacity: 1;
+	/* transition */
+	-webkit-transition: visibility 0.1s, opacity 0.1s;
+	-moz-transition: visibility 0.1s, opacity 0.1s;
+	-o-transition: visibility 0.1s, opacity 0.1s;
+	transition: visibility 0.1s, opacity 0.1s;
+}
+/* Hide the control bar when the video is playing and the user is inactive	*/
+.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+	display: block;
+	visibility: hidden;
+	opacity: 0;
+	/* transition */
+	-webkit-transition: visibility 1s, opacity 1s;
+	-moz-transition: visibility 1s, opacity 1s;
+	-o-transition: visibility 1s, opacity 1s;
+	transition: visibility 1s, opacity 1s;
+}
+.vjs-default-skin.vjs-controls-disabled .vjs-control-bar {
+	display: none;
+}
+.vjs-default-skin.vjs-using-native-controls .vjs-control-bar {
+	display: none;
+}
+/* The control bar shouldn't show after an error */
+.vjs-default-skin.vjs-error .vjs-control-bar {
+	display: none;
+}
+/* Don't hide the control bar if it's audio */
+.vjs-audio.vjs-default-skin.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar {
+	opacity: 1;
+	visibility: visible;
+}
+/* IE8 is flakey with fonts, and you have to change the actual content to force
+fonts to show/hide properly.
+	- "\9" IE8 hack didn't work for this
+	- Found in XP IE8 from http://modern.ie. Does not show up in "IE8 mode" in IE9
+*/
+@media \0screen {
+	.vjs-default-skin.vjs-user-inactive.vjs-playing .vjs-control-bar :before {
+		content: "";
+	}
+}
+/* General styles for individual controls. */
+.vjs-default-skin .vjs-control {
+	outline: none;
+	position: relative;
+	float: left;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	height: 3.0em;
+	width: 4em;
+}
+/* Font button icons */
+.vjs-default-skin .vjs-control:before {
+	font-family: VideoJS;
+	font-size: 1.5em;
+	line-height: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+/* Replacement for focus outline */
+.vjs-default-skin .vjs-control:focus:before,
+.vjs-default-skin .vjs-control:hover:before {
+	text-shadow: 0em 0em 1em #ffffff;
+}
+.vjs-default-skin .vjs-control:focus {
+	/*	outline: 0; */
+	/* keyboard-only users cannot see the focus on several of the UI elements when
+	this is set to 0 */
+
+}
+/* Hide control text visually, but have it available for screenreaders */
+.vjs-default-skin .vjs-control-text {
+	/* hide-visually */
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+/* Play/Pause
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-play-control {
+	width: 5em;
+	cursor: pointer;
+}
+.vjs-default-skin .vjs-play-control:before {
+	content: "\e001";
+}
+.vjs-default-skin.vjs-playing .vjs-play-control:before {
+	content: "\e002";
+}
+/* Playback toggle
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-playback-rate .vjs-playback-rate-value {
+	font-size: 1.5em;
+	line-height: 2;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.vjs-default-skin .vjs-playback-rate.vjs-menu-button .vjs-menu .vjs-menu-content {
+	width: 4em;
+	left: -2em;
+	list-style: none;
+}
+/* Volume/Mute
+-------------------------------------------------------------------------------- */
+.vjs-default-skin .vjs-mute-control,
+.vjs-default-skin .vjs-volume-menu-button {
+	cursor: pointer;
+	float: right;
+}
+.vjs-default-skin .vjs-mute-control:before,
+.vjs-default-skin .vjs-volume-menu-button:before {
+	content: "\e006";
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-0:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-0:before {
+	content: "\e003";
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-1:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-1:before {
+	content: "\e004";
+}
+.vjs-default-skin .vjs-mute-control.vjs-vol-2:before,
+.vjs-default-skin .vjs-volume-menu-button.vjs-vol-2:before {
+	content: "\e005";
+}
+.vjs-default-skin .vjs-volume-control {
+	width: 5em;
+	float: right;
+}
+.vjs-default-skin .vjs-volume-bar {
+	width: 5em;
+	height: 0.6em;
+	margin: 1.1em auto 0;
+}
+.vjs-default-skin .vjs-volume-level {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 0.5em;
+	/* assuming volume starts at 1.0 */
+
+	width: 100%;
+	background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+}
+.vjs-default-skin .vjs-volume-bar .vjs-volume-handle {
+	width: 0.5em;
+	height: 0.5em;
+	/* Assumes volume starts at 1.0. If you change the size of the
+		 handle relative to the volume bar, you'll need to update this value
+		 too. */
+
+	left: 4.5em;
+}
+.vjs-default-skin .vjs-volume-handle:before {
+	font-size: 0.9em;
+	top: -0.2em;
+	left: -0.2em;
+	width: 1em;
+	height: 1em;
+}
+/* The volume menu button is like menu buttons (captions/subtitles) but works
+		a little differently. It needs to be possible to tab to the volume slider
+		without hitting space bar on the menu button. To do this we're not using
+		display:none to hide the slider menu by default, and instead setting the
+		width and height to zero. */
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu {
+	display: block;
+	width: 0;
+	height: 0;
+	border-top-color: transparent;
+}
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu .vjs-menu-content {
+	height: 0;
+	width: 0;
+}
+.vjs-default-skin .vjs-volume-menu-button:hover .vjs-menu,
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu.vjs-lock-showing {
+	border-top-color: rgba(7, 40, 50, 0.5);
+	/* Same as ul background */
+
+}
+.vjs-default-skin .vjs-volume-menu-button:hover .vjs-menu .vjs-menu-content,
+.vjs-default-skin .vjs-volume-menu-button .vjs-menu.vjs-lock-showing .vjs-menu-content {
+	height: 2.9em;
+	width: 10em;
+}
+/* Progress
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-progress-control {
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: auto;
+	font-size: 0.3em;
+	height: 1em;
+	/* Set above the rest of the controls. */
+	top: -1em;
+	/* Shrink the bar slower than it grows. */
+	/* transition */
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+/* On hover, make the progress bar grow to something that's more clickable.
+		This simply changes the overall font for the progress bar, and this
+		updates both the em-based widths and heights, as wells as the icon font */
+.vjs-default-skin:hover .vjs-progress-control {
+	font-size: .9em;
+	/* Even though we're not changing the top/height, we need to include them in
+			the transition so they're handled correctly. */
+
+	/* transition */
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	transition: all 0.2s;
+}
+/* Box containing play and load progresses. Also acts as seek scrubber. */
+.vjs-default-skin .vjs-progress-holder {
+	height: 100%;
+}
+/* Progress Bars */
+.vjs-default-skin .vjs-progress-holder .vjs-play-progress,
+.vjs-default-skin .vjs-progress-holder .vjs-load-progress,
+.vjs-default-skin .vjs-progress-holder .vjs-load-progress div {
+	position: absolute;
+	display: block;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	/* updated by javascript during playback */
+
+	width: 0;
+	/* Needed for IE6 */
+	left: 0;
+	top: 0;
+}
+.vjs-default-skin .vjs-play-progress {
+	/*
+		Using a data URI to create the white diagonal lines with a transparent
+			background. Surprisingly works in IE8.
+			Created using http://www.patternify.com
+		Changing the first color value will change the bar color.
+		Also using a paralax effect to make the lines move backwards.
+			The -50% left position makes that happen.
+	*/
+
+	background: #66a8cc url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC) -50% 0 repeat;
+}
+.vjs-default-skin .vjs-load-progress {
+	background: #646464 /* IE8- Fallback */;
+	background: rgba(255, 255, 255, 0.2);
+}
+/* there are child elements of the load progress bar that represent the
+	 specific time ranges that have been buffered */
+.vjs-default-skin .vjs-load-progress div {
+	background: #787878 /* IE8- Fallback */;
+	background: rgba(255, 255, 255, 0.1);
+}
+.vjs-default-skin .vjs-seek-handle {
+	width: 1.5em;
+	height: 100%;
+}
+.vjs-default-skin .vjs-seek-handle:before {
+	padding-top: 0.1em /* Minor adjustment */;
+}
+/* Live Mode
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin.vjs-live .vjs-time-controls,
+.vjs-default-skin.vjs-live .vjs-time-divider,
+.vjs-default-skin.vjs-live .vjs-progress-control {
+	display: none;
+}
+.vjs-default-skin.vjs-live .vjs-live-display {
+	display: block;
+}
+/* Live Display
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-live-display {
+	display: none;
+	font-size: 1em;
+	line-height: 3em;
+}
+/* Time Display
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-time-controls {
+	font-size: 1em;
+	/* Align vertically by making the line height the same as the control bar */
+	line-height: 3em;
+}
+.vjs-default-skin .vjs-current-time {
+	float: left;
+}
+.vjs-default-skin .vjs-duration {
+	float: left;
+}
+/* Remaining time is in the HTML, but not included in default design */
+.vjs-default-skin .vjs-remaining-time {
+	display: none;
+	float: left;
+}
+.vjs-time-divider {
+	float: left;
+	line-height: 3em;
+}
+/* Fullscreen
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-fullscreen-control {
+	width: 3.8em;
+	cursor: pointer;
+	float: right;
+}
+.vjs-default-skin .vjs-fullscreen-control:before {
+	content: "\e000";
+}
+/* Switch to the exit icon when the player is in fullscreen */
+.vjs-default-skin.vjs-fullscreen .vjs-fullscreen-control:before {
+	content: "\e00b";
+}
+/* Big Play Button (play button at start)
+--------------------------------------------------------------------------------
+Positioning of the play button in the center or other corners can be done more
+easily in the skin designer. http://designer.videojs.com/
+*/
+.vjs-default-skin .vjs-big-play-button {
+	left: 0.5em;
+	top: 0.5em;
+	font-size: 3em;
+	display: block;
+	z-index: 2;
+	position: absolute;
+	width: 4em;
+	height: 2.6em;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	opacity: 1;
+	/* Need a slightly gray bg so it can be seen on black backgrounds */
+	/* background-color-with-alpha */
+	background-color: #07141e;
+	background-color: rgba(7, 20, 30, 0.7);
+	border: 0.1em solid #3b4249;
+	/* border-radius */
+	-webkit-border-radius: 0.8em;
+	-moz-border-radius: 0.8em;
+	border-radius: 0.8em;
+	/* box-shadow */
+	-webkit-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+	-moz-box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+	box-shadow: 0px 0px 1em rgba(255, 255, 255, 0.25);
+	/* transition */
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	-o-transition: all 0.4s;
+	transition: all 0.4s;
+}
+/* Optionally center */
+.vjs-default-skin.vjs-big-play-centered .vjs-big-play-button {
+	/* Center it horizontally */
+	left: 50%;
+	margin-left: -2.1em;
+	/* Center it vertically */
+	top: 50%;
+	margin-top: -1.4000000000000001em;
+}
+/* Hide if controls are disabled */
+.vjs-default-skin.vjs-controls-disabled .vjs-big-play-button {
+	display: none;
+}
+/* Hide when video starts playing */
+.vjs-default-skin.vjs-has-started .vjs-big-play-button {
+	display: none;
+}
+/* Hide on mobile devices. Remove when we stop using native controls
+		by default on mobile	*/
+.vjs-default-skin.vjs-using-native-controls .vjs-big-play-button {
+	display: none;
+}
+.vjs-default-skin:hover .vjs-big-play-button,
+.vjs-default-skin .vjs-big-play-button:focus {
+	outline: 0;
+	border-color: #fff;
+	/* IE8 needs a non-glow hover state */
+	background-color: #505050;
+	background-color: rgba(50, 50, 50, 0.75);
+	/* box-shadow */
+	-webkit-box-shadow: 0 0 3em #ffffff;
+	-moz-box-shadow: 0 0 3em #ffffff;
+	box-shadow: 0 0 3em #ffffff;
+	/* transition */
+	-webkit-transition: all 0s;
+	-moz-transition: all 0s;
+	-o-transition: all 0s;
+	transition: all 0s;
+}
+.vjs-default-skin .vjs-big-play-button:before {
+	content: "\e001";
+	font-family: VideoJS;
+	/* In order to center the play icon vertically we need to set the line height
+		 to the same as the button height */
+
+	line-height: 2.6em;
+	text-shadow: 0.05em 0.05em 0.1em #000;
+	text-align: center /* Needed for IE8 */;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.vjs-error .vjs-big-play-button {
+	display: none;
+}
+/* Error Display
+--------------------------------------------------------------------------------
+*/
+.vjs-error-display {
+	display: none;
+}
+.vjs-error .vjs-error-display {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+.vjs-error .vjs-error-display:before {
+	content: 'X';
+	font-family: Arial;
+	font-size: 4em;
+	color: #666666;
+	/* In order to center the play icon vertically we need to set the line height
+		 to the same as the button height */
+
+	line-height: 1;
+	text-shadow: 0.05em 0.05em 0.1em #000;
+	text-align: center /* Needed for IE8 */;
+	vertical-align: middle;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	margin-top: -0.5em;
+	width: 100%;
+}
+.vjs-error-display div {
+	position: absolute;
+	bottom: 1em;
+	right: 0;
+	left: 0;
+	font-size: 1.4em;
+	text-align: center;
+	padding: 3px;
+	background: #000000;
+	background: rgba(0, 0, 0, 0.5);
+}
+.vjs-error-display a,
+.vjs-error-display a:visited {
+	color: #F4A460;
+}
+/* Loading Spinner
+--------------------------------------------------------------------------------
+*/
+.vjs-loading-spinner {
+	/* Should be hidden by default */
+	display: none;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	font-size: 4em;
+	line-height: 1;
+	width: 1em;
+	height: 1em;
+	margin-left: -0.5em;
+	margin-top: -0.5em;
+	opacity: 0.75;
+}
+/* Show the spinner when waiting for data and seeking to a new time */
+.vjs-waiting .vjs-loading-spinner,
+.vjs-seeking .vjs-loading-spinner {
+	display: block;
+	/* only animate when showing because it can be processor heavy */
+	/* animation */
+	-webkit-animation: spin 1.5s infinite linear;
+	-moz-animation: spin 1.5s infinite linear;
+	-o-animation: spin 1.5s infinite linear;
+	animation: spin 1.5s infinite linear;
+}
+/* Errors are unrecoverable without user interaction so hide the spinner */
+.vjs-error .vjs-loading-spinner {
+	display: none;
+	/* ensure animation doesn't continue while hidden */
+	/* animation */
+	-webkit-animation: none;
+	-moz-animation: none;
+	-o-animation: none;
+	animation: none;
+}
+.vjs-default-skin .vjs-loading-spinner:before {
+	content: "\e01e";
+	font-family: VideoJS;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1em;
+	height: 1em;
+	text-align: center;
+	text-shadow: 0em 0em 0.1em #000;
+}
+@-moz-keyframes spin {
+	0% {
+		-moz-transform: rotate(0deg);
+	}
+	100% {
+		-moz-transform: rotate(359deg);
+	}
+}
+@-webkit-keyframes spin {
+	0% {
+		-webkit-transform: rotate(0deg);
+	}
+	100% {
+		-webkit-transform: rotate(359deg);
+	}
+}
+@-o-keyframes spin {
+	0% {
+		-o-transform: rotate(0deg);
+	}
+	100% {
+		-o-transform: rotate(359deg);
+	}
+}
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(359deg);
+	}
+}
+/* Menu Buttons (Captions/Subtitles/etc.)
+--------------------------------------------------------------------------------
+*/
+.vjs-default-skin .vjs-menu-button {
+	float: right;
+	cursor: pointer;
+}
+.vjs-default-skin .vjs-menu {
+	display: none;
+	position: absolute;
+	bottom: 0;
+	left: 0em;
+	/* (Width of vjs-menu - width of button) / 2 */
+
+	width: 0em;
+	height: 0em;
+	margin-bottom: 3em;
+	border-left: 2em solid transparent;
+	border-right: 2em solid transparent;
+	border-top: 1.55em solid #000000;
+	/* Same width top as ul bottom */
+
+	border-top-color: rgba(7, 40, 50, 0.5);
+	/* Same as ul background */
+
+}
+/* Button Pop-up Menu */
+.vjs-default-skin .vjs-menu-button .vjs-menu .vjs-menu-content {
+	display: block;
+	padding: 0;
+	margin: 0;
+	position: absolute;
+	width: 10em;
+	bottom: 1.5em;
+	/* Same bottom as vjs-menu border-top */
+
+	max-height: 15em;
+	overflow: auto;
+	left: -5em;
+	/* Width of menu - width of button / 2 */
+
+	/* background-color-with-alpha */
+	background-color: #07141e;
+	background-color: rgba(7, 20, 30, 0.7);
+	/* box-shadow */
+	-webkit-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
+	-moz-box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
+	box-shadow: -0.2em -0.2em 0.3em rgba(255, 255, 255, 0.2);
+}
+.vjs-default-skin .vjs-menu-button:hover .vjs-control-content .vjs-menu,
+.vjs-default-skin .vjs-control-content .vjs-menu.vjs-lock-showing {
+	display: block;
+}
+/* prevent menus from opening while scrubbing (FF, IE) */
+.vjs-default-skin.vjs-scrubbing .vjs-menu-button:hover .vjs-control-content .vjs-menu {
+	display: none;
+}
+.vjs-default-skin .vjs-menu-button ul li {
+	list-style: none;
+	margin: 0;
+	padding: 0.3em 0 0.3em 0;
+	line-height: 1.4em;
+	font-size: 1.2em;
+	text-align: center;
+	text-transform: lowercase;
+}
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected {
+	background-color: #000;
+}
+.vjs-default-skin .vjs-menu-button ul li:focus,
+.vjs-default-skin .vjs-menu-button ul li:hover,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:focus,
+.vjs-default-skin .vjs-menu-button ul li.vjs-selected:hover {
+	outline: 0;
+	color: #111;
+	/* background-color-with-alpha */
+	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.75);
+	/* box-shadow */
+	-webkit-box-shadow: 0 0 1em #ffffff;
+	-moz-box-shadow: 0 0 1em #ffffff;
+	box-shadow: 0 0 1em #ffffff;
+}
+.vjs-default-skin .vjs-menu-button ul li.vjs-menu-title {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 1em;
+	line-height: 2em;
+	padding: 0;
+	margin: 0 0 0.3em 0;
+	font-weight: bold;
+	cursor: default;
+}
+/* Subtitles Button */
+.vjs-default-skin .vjs-subtitles-button:before {
+	content: "\e00c";
+}
+/* Captions Button */
+.vjs-default-skin .vjs-captions-button:before {
+	content: "\e008";
+}
+/* Chapters Button */
+.vjs-default-skin .vjs-chapters-button:before {
+	content: "\e00c";
+}
+.vjs-default-skin .vjs-chapters-button.vjs-menu-button .vjs-menu .vjs-menu-content {
+	width: 24em;
+	left: -12em;
+}
+/* Replacement for focus outline */
+.vjs-default-skin .vjs-captions-button:focus .vjs-control-content:before,
+.vjs-default-skin .vjs-captions-button:hover .vjs-control-content:before {
+	/* box-shadow */
+	-webkit-box-shadow: 0 0 1em #ffffff;
+	-moz-box-shadow: 0 0 1em #ffffff;
+	box-shadow: 0 0 1em #ffffff;
+}
+/*
+REQUIRED STYLES (be careful overriding)
+================================================================================
+When loading the player, the video tag is replaced with a DIV,
+that will hold the video tag or object tag for other playback methods.
+The div contains the video playback element (Flash or HTML5) and controls,
+and sets the width and height of the video.
+
+** If you want to add some kind of border/padding (e.g. a frame), or special
+positioning, use another containing element. Otherwise you risk messing up
+control positioning and full window mode. **
+*/
+.video-js {
+	background-color: #000;
+	position: relative;
+	padding: 0;
+	/* Start with 10px for base font size so other dimensions can be em based and
+		 easily calculable. */
+
+	font-size: 10px;
+	/* Allow poster to be vertically aligned. */
+
+	vertical-align: middle;
+	/*	display: table-cell; */
+	/*This works in Safari but not Firefox.*/
+
+	/* Provide some basic defaults for fonts */
+
+	font-weight: normal;
+	font-style: normal;
+	/* Avoiding helvetica: issue #376 */
+
+	font-family: Arial, sans-serif;
+	/* Turn off user selection (text highlighting) by default.
+		 The majority of player components will not be text blocks.
+		 Text areas will need to turn user selection back on. */
+
+	/* user-select */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Playback technology elements expand to the width/height of the containing div
+		<video> or <object> */
+.video-js .vjs-tech {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+/* Fix for Firefox 9 fullscreen (only if it is enabled). Not needed when
+	 checking fullScreenEnabled. */
+.video-js:-moz-full-screen {
+	position: absolute;
+}
+/* Fullscreen Styles */
+body.vjs-full-window {
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	/* Fix for IE6 full-window. http://www.cssplay.co.uk/layouts/fixed.html */
+	overflow-y: auto;
+}
+.video-js.vjs-fullscreen {
+	position: fixed;
+	overflow: hidden;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	width: 100% !important;
+	height: 100% !important;
+	/* IE6 full-window (underscore hack) */
+	_position: absolute;
+}
+.video-js:-webkit-full-screen {
+	width: 100% !important;
+	height: 100% !important;
+}
+.video-js.vjs-fullscreen.vjs-user-inactive {
+	cursor: none;
+}
+/* Poster Styles */
+.vjs-poster {
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+.vjs-poster img {
+	display: block;
+	margin: 0 auto;
+	max-height: 100%;
+	padding: 0;
+	width: 100%;
+}
+/* Hide the poster after the video has started playing */
+.video-js.vjs-has-started .vjs-poster {
+	display: none;
+}
+/* Don't hide the poster if we're playing audio */
+.video-js.vjs-audio.vjs-has-started .vjs-poster {
+	display: block;
+}
+/* Hide the poster when controls are disabled because it's clickable
+		and the native poster can take over */
+.video-js.vjs-controls-disabled .vjs-poster {
+	display: none;
+}
+/* Hide the poster when native controls are used otherwise it covers them */
+.video-js.vjs-using-native-controls .vjs-poster {
+	display: none;
+}
+/* Text Track Styles */
+/* Overall track holder for both captions and subtitles */
+.video-js .vjs-text-track-display {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 3em;
+	right: 0;
+	pointer-events: none;
+}
+/* Captions Settings Dialog */
+.vjs-caption-settings {
+	position: relative;
+	top: 1em;
+	background-color: #000;
+	opacity: 0.75;
+	color: #FFF;
+	margin: 0 auto;
+	padding: 0.5em;
+	height: 15em;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	width: 40em;
+}
+.vjs-caption-settings .vjs-tracksettings {
+	top: 0;
+	bottom: 2em;
+	left: 0;
+	right: 0;
+	position: absolute;
+	overflow: auto;
+}
+.vjs-caption-settings .vjs-tracksettings-colors,
+.vjs-caption-settings .vjs-tracksettings-font {
+	float: left;
+}
+.vjs-caption-settings .vjs-tracksettings-colors:after,
+.vjs-caption-settings .vjs-tracksettings-font:after,
+.vjs-caption-settings .vjs-tracksettings-controls:after {
+	clear: both;
+}
+.vjs-caption-settings .vjs-tracksettings-controls {
+	position: absolute;
+	bottom: 1em;
+	right: 1em;
+}
+.vjs-caption-settings .vjs-tracksetting {
+	margin: 5px;
+	padding: 3px;
+	min-height: 40px;
+}
+.vjs-caption-settings .vjs-tracksetting label {
+	display: block;
+	width: 100px;
+	margin-bottom: 5px;
+}
+.vjs-caption-settings .vjs-tracksetting span {
+	display: inline;
+	margin-left: 5px;
+}
+.vjs-caption-settings .vjs-tracksetting > div {
+	margin-bottom: 5px;
+	min-height: 20px;
+}
+.vjs-caption-settings .vjs-tracksetting > div:last-child {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	min-height: 0;
+}
+.vjs-caption-settings label > input {
+	margin-right: 10px;
+}
+.vjs-caption-settings input[type="button"] {
+	width: 40px;
+	height: 40px;
+}
+/* Hide disabled or unsupported controls */
+.vjs-hidden {
+	display: none !important;
+}
+.vjs-lock-showing {
+	display: block !important;
+	opacity: 1;
+	visibility: visible;
+}
+/*	In IE8 w/ no JavaScript (no HTML5 shim), the video tag doesn't register.
+		The .video-js classname on the video tag also isn't considered.
+		This optional paragraph inside the video tag can provide a message to users
+		about what's required to play video. */
+.vjs-no-js {
+	padding: 2em;
+	color: #ccc;
+	background-color: #333;
+	font-size: 1.8em;
+	font-family: Arial, sans-serif;
+	text-align: center;
+	width: 30em;
+	height: 15em;
+	margin: 0 auto;
+}
+.vjs-no-js a,
+.vjs-no-js a:visited {
+	color: #F4A460;
+}
+/* -----------------------------------------------------------------------------
+The original source of this file lives at
+https://github.com/videojs/video.js/blob/master/src/css/video-js.less */
+
+.vjs-big-play-button {
+	top: -webkit-calc(100% - 100px)!important;
+	top: -moz-calc(100% - 100px)!important;
+	top: -o-calc(100% - 100px)!important;
+	top: calc(100% - 100px)!important;
+}
+
+.get-it-on {
+	width: 110px;
+	height: 40px;
+	float: right;
+	background-image: url(/image/get_it_on.png)!ie;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAG4AAAAoCAMAAAAohD+4AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAFFQTFRFQEBAgICAv7+/ICAgEBAQ7+/vYGBgcHBwMDAwUFBQz8/Pj4+Pn5+f39/fr6+vyMjICgoKpqamrKys+fn5U1NTt7e3h4eHfX19////AAAA////Xh9megAAABt0Uk5T//////////////////////////////////8AJzQLNQAAAllJREFUeNrcmOuWoyAMgBPuoNjrTMO8/4NuwG6nwtZeTsuPzemxEsQvhiSg8HPY7Hffp8/Lbr85/MDh67hNXWR7/DrA5pi6yXED+20/3HYPu9RRdnDqifu+jVMY7N3x7jnc6SbOaSJfK/FX6WQ+kkn+HTjFNyZZKQ3ZJFVSxidJNvdaZQhUvh4gmwDuNdzAtLFWijE5kEpPGg0Fk58ORhKMkDpokYQO5F7CRSKtGhwmQUxCIRhUnAlAxcsxeZJiSBFfwvGzNbQ0RZUQrUY0NS4kIJfNeRIn7SRQJpB+FGKAKnwiBpQ0Mi4KKDhu8SQCDSGk53GWioQhzieTWtqC2RRESB4zjlsWc8ywTiUD+fcEbqBawjvTvMJBQyP7Qdz0WVqFU3dcqUC+Ewd3Hm7kQoOXPnw/DvrilvVX2RkvXkE9ghuWJQCucaUq56Mqp9JaecnOs5mAxt3GyQa3rJvsyCsclBZkj/PAUh/MJXdjrtuhno8qEXQbmuoRXMqAQZclC0lbH0jktOLqGlbybmzTPMBjOL69y5HMC6UpfnJ82bCe5r7FXQ9Zw/niHMxtZMmO5aIxyNWaGVucfAwHZ739zRMX62Crcaahjek5HDsIivCkKxPP4XNrARJrodngfDFwgXPLWAwLexuc1Ct5vsSpHEdeVzgGaKOU5zaviDIuKkK7mruZJ/Q/0nyJmxOswf29QckO7pfrexU3xSn7G3jzUO0hDW+JCkfME8JbpFEOeScm8uGsV1awnoeWf/nYtvYj8r/jOr9wdX6d7Pyy3PlTQPnQcer1oeOPAAMAfBqCtlw76XQAAAAASUVORK5CYII=);
+	background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxNi4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+DQo8c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkxpdmV0eXBlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCINCgkgd2lkdGg9IjExMHB4IiBoZWlnaHQ9IjQwcHgiIHZpZXdCb3g9IjAgMCAxMTAgNDAiIGVuYWJsZS1iYWNrZ3JvdW5kPSJuZXcgMCAwIDExMCA0MCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8Zz4NCgk8cGF0aCBmaWxsPSIjQTZBNkE2IiBkPSJNMTAzLjM3MSwwSDYuNjI1QzYuMzcyLDAsNi4xMTksMCw1Ljg2NiwwLjAwMUM1LjY1MiwwLjAwMiw1LjQ0MywwLjAwNSw1LjIzLDAuMDENCgkJYy0wLjQ2NSwwLjAxNi0wLjkzNCwwLjA0LTEuMzk0LDAuMTI1Yy0wLjQ2NywwLjA4Mi0wLjksMC4yMi0xLjMyLDAuNDM2QzIuMDk4LDAuNzgzLDEuNzIsMS4wNTcsMS4zODUsMS4zODYNCgkJQzEuMDU2LDEuNzIxLDAuNzgzLDIuMDk4LDAuNTcsMi41MTdDMC4zNTUsMi45MzYsMC4yMTcsMy4zNywwLjEzNSwzLjgzN2MtMC4wODcsMC40Ni0wLjExLDAuOTI5LTAuMTI2LDEuMzk0DQoJCUMwLjAwNCw1LjQ0NCwwLjAwMiw1LjY1MiwwLjAwMSw1Ljg2NkMwLDYuMTE5LDAsNi4zNzIsMCw2LjYyNXYyNi43NTNjMCwwLjI0OCwwLDAuNTA2LDAuMDAxLDAuNzU2DQoJCWMwLjAwMSwwLjIxMSwwLjAwMywwLjQyNiwwLjAwOCwwLjYzOWMwLjAxNiwwLjQ3MSwwLjA0LDAuOTM0LDAuMTI2LDEuMzg5YzAuMDgyLDAuNDczLDAuMjIsMC45MDYsMC40MzUsMS4zMw0KCQljMC4yMTIsMC40MDgsMC40ODUsMC43OTksMC44MTUsMS4xMjFjMC4zMzUsMC4zMzQsMC43MTIsMC42MTMsMS4xMzEsMC44MjRjMC40MTksMC4yMTcsMC44NTMsMC4zNDQsMS4zMiwwLjQzOA0KCQljMC40NiwwLjA4LDAuOTI5LDAuMTA1LDEuMzk0LDAuMTE1YzAuMjEzLDAuMDA0LDAuNDIyLDAuMDA2LDAuNjM2LDAuMDA4QzYuMTE5LDQwLDYuMzcyLDQwLDYuNjI1LDQwaDk2Ljc0Nw0KCQljMC4yNTIsMCwwLjUwNiwwLDAuNzYtMC4wMDJjMC4yMTEtMC4wMDIsMC40MjYtMC4wMDQsMC42NDEtMC4wMDhjMC40NjMtMC4wMSwwLjkzMi0wLjAzNSwxLjM5My0wLjExNQ0KCQljMC40NjEtMC4wOTQsMC44OTUtMC4yMjEsMS4zMi0wLjQzOGMwLjQyLTAuMjExLDAuNzk3LTAuNDksMS4xMjctMC44MjRjMC4zMjgtMC4zMjIsMC42MDctMC43MTMsMC44MTgtMS4xMjENCgkJYzAuMjE3LTAuNDI0LDAuMzU0LTAuODU3LDAuNDM2LTEuMzNjMC4wODItMC40NTUsMC4xMTEtMC45MTgsMC4xMjMtMS4zODljMC4wMDgtMC4yMTMsMC4wMS0wLjQyOCwwLjAxLTAuNjM5DQoJCUMxMTAsMzMuODg1LDExMCwzMy42MjcsMTEwLDMzLjM3OVY2LjYyNWMwLTAuMjU0LDAtMC41MDYtMC4wMDItMC43NmMwLTAuMjEzLTAuMDAyLTAuNDIxLTAuMDEtMC42MzUNCgkJYy0wLjAxMi0wLjQ2NS0wLjA0MS0wLjkzNC0wLjEyMy0xLjM5NGMtMC4wODItMC40NjctMC4yMTktMC45MDEtMC40MzYtMS4zMmMtMC4yMTEtMC40MTktMC40OS0wLjc5Ni0wLjgxOC0xLjEzMQ0KCQljLTAuMzMtMC4zMjktMC43MDctMC42MDMtMS4xMjctMC44MTVjLTAuNDI2LTAuMjE1LTAuODU5LTAuMzU0LTEuMzItMC40MzZjLTAuNDYxLTAuMDg2LTAuOTMtMC4xMS0xLjM5My0wLjEyNQ0KCQljLTAuMjE1LTAuMDA1LTAuNDMtMC4wMDctMC42NDEtMC4wMDhDMTAzLjg3NywwLDEwMy42MjMsMCwxMDMuMzcxLDBMMTAzLjM3MSwweiIvPg0KCTxwYXRoIGQ9Ik0xMDMuMzcxLDAuOTg1bDAuNzUyLDAuMDAxYzAuMjA3LDAuMDAxLDAuNDE2LDAuMDAzLDAuNjE5LDAuMDEzYzAuMzc5LDAuMDA5LDAuODE4LDAuMDI3LDEuMjQ2LDAuMTA4DQoJCWMwLjM5NSwwLjA3MSwwLjcyNywwLjE4LDEuMDUxLDAuMzQyYzAuMzIsMC4xNjYsMC42MTUsMC4zOCwwLjg3NSwwLjYzOGMwLjI1OCwwLjI1OCwwLjQ3MywwLjU1MiwwLjYzOSwwLjg3Ng0KCQljMC4xNjIsMC4zMjIsMC4yNzEsMC42NTQsMC4zNDIsMS4wNWMwLjA3NiwwLjQyMywwLjA5NiwwLjg2NSwwLjEwNSwxLjI0YzAuMDA2LDAuMjA3LDAuMDA4LDAuNDE1LDAuMDA4LDAuNjI1DQoJCWMwLjAwMiwwLjI1LDAuMDAyLDAuNDk2LDAuMDAyLDAuNzQ4djI2Ljc1M2MwLDAuMjQ2LDAsMC41MDItMC4wMDIsMC43NWMwLDAuMjA3LTAuMDAyLDAuNDE2LTAuMDA4LDAuNjIxDQoJCWMtMC4wMSwwLjM3Ny0wLjAyOSwwLjgxOC0wLjEwNSwxLjI0NGMtMC4wNywwLjM4Ny0wLjE4LDAuNzI1LTAuMzQyLDEuMDUzYy0wLjE2NiwwLjMxOC0wLjM4MSwwLjYxMy0wLjYzOSwwLjg3NQ0KCQljLTAuMjYsMC4yNTQtMC41NTUsMC40NjctMC44NzcsMC42MjdjLTAuMzIyLDAuMTc0LTAuNjU0LDAuMjc3LTEuMDQ3LDAuMzVjLTAuNDM0LDAuMDc0LTAuODkzLDAuMTA0LTEuMjQ0LDAuMTExDQoJCWMtMC4yMDUsMC4wMDQtMC40MTIsMC4wMDYtMC42MjMsMC4wMDhjLTAuMjUsMC4wMDItMC41MDIsMC4wMDItMC43NTIsMC4wMDJINi42MjVjLTAuMDAyLDAtMC4wMDUsMC0wLjAwNywwDQoJCWMtMC4yNDksMC0wLjQ5NywwLTAuNzQ4LTAuMDAyYy0wLjIwMy0wLjAwMi0wLjQxMi0wLjAwNC0wLjYxNy0wLjAwOGMtMC4zNDktMC4wMDgtMC44MS0wLjAzNy0xLjI0MS0wLjExMQ0KCQljLTAuMzk1LTAuMDcyLTAuNzI3LTAuMTc2LTEuMDUxLTAuMzVjLTAuMzIzLTAuMTYtMC42MTctMC4zNzMtMC44NzUtMC42MjdjLTAuMjU3LTAuMjYyLTAuNDcxLTAuNTU3LTAuNjM4LTAuODc1DQoJCWMtMC4xNjEtMC4zMjgtMC4yNzEtMC42NjYtMC4zNDEtMS4wNTVjLTAuMDgyLTAuNDI2LTAuMDk5LTAuODY1LTAuMTA4LTEuMjQyYy0wLjAxLTAuMjA3LTAuMDEyLTAuNDE2LTAuMDEzLTAuNjIxbDAtMC42di0wLjE1DQoJCVY2LjYyNXYtMC4xNWwwLTAuNTk4YzAuMDAxLTAuMjA4LDAuMDAzLTAuNDE2LDAuMDEzLTAuNjI0YzAuMDA5LTAuMzc0LDAuMDI2LTAuODE0LDAuMTA4LTEuMjQxYzAuMDctMC4zOTQsMC4xOC0wLjcyNywwLjM0MS0xLjA1DQoJCUMxLjYxNSwyLjYzOSwxLjgzLDIuMzQ1LDIuMDg3LDIuMDg3YzAuMjU3LTAuMjU3LDAuNTUxLTAuNDcyLDAuODc1LTAuNjM5YzAuMzIzLTAuMTYxLDAuNjU1LTAuMjcsMS4wNS0wLjM0MQ0KCQlDNC40MzgsMS4wMjYsNC44NzgsMS4wMDgsNS4yNTMsMUM1LjQ2LDAuOTksNS42NjgsMC45ODgsNS44NzYsMC45ODdsMC43NDktMC4wMDFIMTAzLjM3MSIvPg0KCTxnPg0KCQk8Zz4NCgkJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zMC4xMjgsMTkuNzg0Yy0wLjAyOS0zLjIyMywyLjYzOS00Ljc5MSwyLjc2MS00Ljg2NGMtMS41MTEtMi4yMDMtMy44NTMtMi41MDQtNC42NzYtMi41MjgNCgkJCQljLTEuOTY3LTAuMjA3LTMuODc1LDEuMTc3LTQuODc3LDEuMTc3Yy0xLjAyMiwwLTIuNTY1LTEuMTU3LTQuMjI4LTEuMTIzYy0yLjE0LDAuMDMzLTQuMTQyLDEuMjcyLTUuMjQsMy4xOTYNCgkJCQljLTIuMjY2LDMuOTIzLTAuNTc2LDkuNjg4LDEuNTk1LDEyLjg1OGMxLjA4NiwxLjU1MywyLjM1NSwzLjI4Nyw0LjAxNiwzLjIyN2MxLjYyNS0wLjA2OCwyLjIzMi0xLjAzNyw0LjE5My0xLjAzNw0KCQkJCWMxLjk0MywwLDIuNTEzLDEuMDM3LDQuMjA3LDAuOTk4YzEuNzQ0LTAuMDI5LDIuODQyLTEuNTYxLDMuODktMy4xMjdjMS4yNTUtMS43ODEsMS43NTktMy41MzMsMS43NzktMy42MjMNCgkJCQlDMzMuNTA3LDI0LjkyNCwzMC4xNjEsMjMuNjQ2LDMwLjEyOCwxOS43ODR6Ii8+DQoJCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMjYuOTI4LDEwLjMwNmMwLjg3NC0xLjA5MywxLjQ3Mi0yLjU4LDEuMzA2LTQuMDg5Yy0xLjI2NSwwLjA1Ni0yLjg0NywwLjg3NS0zLjc1OCwxLjk0NA0KCQkJCWMtMC44MDYsMC45NDItMS41MjYsMi40ODYtMS4zNCwzLjkzOEMyNC41NTcsMTIuMjA1LDI2LjAxNiwxMS4zODIsMjYuOTI4LDEwLjMwNnoiLz4NCgkJPC9nPg0KCTwvZz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQ5LjQ3OSwxMy4wOTJjLTAuNjA5LDAuMjMtMS4yNTIsMC4zNDUtMS45MjksMC4zNDVjLTEuMDA2LDAtMS43OTItMC4yNzMtMi4zNTgtMC44Mg0KCQkJYy0wLjU4NC0wLjU2NS0wLjg3Ni0xLjM0Mi0wLjg3Ni0yLjMzYzAtMC45ODEsMC4zMTItMS43NzEsMC45MzctMi4zNjdjMC42MjUtMC41OTcsMS40NDYtMC44OTUsMi40NjUtMC44OTUNCgkJCWMwLjY1MiwwLDEuMTc3LDAuMDk2LDEuNTc1LDAuMjg5bC0wLjIyNCwwLjgyYy0wLjM4Ni0wLjE3NC0wLjg0Mi0wLjI2MS0xLjM3LTAuMjYxYy0wLjcwMiwwLTEuMjYyLDAuMjAyLTEuNjc4LDAuNjA2DQoJCQljLTAuNDI5LDAuNDIzLTAuNjQzLDEuMDA3LTAuNjQzLDEuNzUyczAuMjA1LDEuMzMzLDAuNjE1LDEuNzYxYzAuMzkxLDAuNDEsMC45MjYsMC42MTUsMS42MDMsMC42MTUNCgkJCWMwLjQyMiwwLDAuNzI3LTAuMDQzLDAuOTEzLTAuMTN2LTEuNzA2aC0xLjE0NlY5Ljk3OWgyLjExNVYxMy4wOTJ6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01NC43MjcsMTAuODkzYzAsMC4xOC0wLjAxMywwLjMzMy0wLjAzNywwLjQ1N2gtMy4wMmMwLjAxMywwLjQ0NywwLjE1OSwwLjc4OSwwLjQzOCwxLjAyNQ0KCQkJYzAuMjU1LDAuMjExLDAuNTg0LDAuMzE3LDAuOTg4LDAuMzE3YzAuNDQ3LDAsMC44NTQtMC4wNzIsMS4yMjEtMC4yMTRsMC4xNTksMC42OTljLTAuNDI5LDAuMTg3LTAuOTM2LDAuMjgtMS41MiwwLjI4DQoJCQljLTAuNzAyLDAtMS4yNTMtMC4yMDctMS42NTQtMC42MmMtMC40LTAuNDEzLTAuNjAxLTAuOTY3LTAuNjAxLTEuNjY0YzAtMC42ODMsMC4xODctMS4yNTIsMC41NTktMS43MDYNCgkJCWMwLjM5Mi0wLjQ4NCwwLjkxOS0wLjcyNywxLjU4NC0wLjcyN2MwLjY1MiwwLDEuMTQ2LDAuMjQyLDEuNDgyLDAuNzI3QzU0LjU5Myw5Ljg1Myw1NC43MjcsMTAuMzI4LDU0LjcyNywxMC44OTN6IE01My43NjcsMTAuNjMyDQoJCQljMC4wMDYtMC4yOTgtMC4wNTktMC41NTYtMC4xOTYtMC43NzNjLTAuMTc0LTAuMjgtMC40NDEtMC40MTktMC44MDEtMC40MTljLTAuMzMsMC0wLjU5NywwLjEzNy0wLjgwMiwwLjQxDQoJCQljLTAuMTY4LDAuMjE4LTAuMjY3LDAuNDc5LTAuMjk4LDAuNzgzSDUzLjc2N3oiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTU4LjMyNCw5LjU5OGgtMS4xMDl2Mi4xOTljMCwwLjU1OSwwLjE5NiwwLjgzOSwwLjU4OCwwLjgzOWMwLjE4LDAsMC4zMjktMC4wMTYsMC40NDctMC4wNDZsMC4wMjcsMC43NjQNCgkJCWMtMC4xOTgsMC4wNzUtMC40NTksMC4xMTItMC43ODIsMC4xMTJjLTAuMzk3LDAtMC43MDgtMC4xMjEtMC45MzItMC4zNjRjLTAuMjI0LTAuMjQyLTAuMzM1LTAuNjQ5LTAuMzM1LTEuMjIxVjkuNTk4aC0wLjY2Mg0KCQkJVjguODQzaDAuNjYydi0wLjgzbDAuOTg3LTAuMjk4djEuMTI4aDEuMTA5VjkuNTk4eiIvPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjMuMjY0LDcuNDkxYzAsMC4xOC0wLjA2LDAuMzI2LTAuMTc4LDAuNDM4Yy0wLjExNywwLjExMi0wLjI3LDAuMTY4LTAuNDU3LDAuMTY4DQoJCQljLTAuMTY3LDAtMC4zMDktMC4wNTgtMC40MjQtMC4xNzNjLTAuMTE1LTAuMTE1LTAuMTcyLTAuMjU5LTAuMTcyLTAuNDMzczAuMDU5LTAuMzE3LDAuMTc4LTAuNDI5DQoJCQljMC4xMTctMC4xMTIsMC4yNjQtMC4xNjgsMC40MzgtMC4xNjhzMC4zMiwwLjA1NiwwLjQzOCwwLjE2OEM2My4yMDQsNy4xNzQsNjMuMjY0LDcuMzE3LDYzLjI2NCw3LjQ5MXogTTYzLjE1MSwxMy4zNzJoLTEuMDA3DQoJCQlWOC44NDNoMS4wMDdWMTMuMzcyeiIvPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjcuMDc0LDkuNTk4aC0xLjEwOHYyLjE5OWMwLDAuNTU5LDAuMTk2LDAuODM5LDAuNTg3LDAuODM5YzAuMTgsMCwwLjMzLTAuMDE2LDAuNDQ3LTAuMDQ2bDAuMDI3LDAuNzY0DQoJCQljLTAuMTk3LDAuMDc1LTAuNDU5LDAuMTEyLTAuNzgxLDAuMTEyYy0wLjM5OCwwLTAuNzA5LTAuMTIxLTAuOTMzLTAuMzY0Yy0wLjIyNC0wLjI0Mi0wLjMzNS0wLjY0OS0wLjMzNS0xLjIyMVY5LjU5OGgtMC42NjINCgkJCVY4Ljg0M2gwLjY2MnYtMC44M2wwLjk4Ny0wLjI5OHYxLjEyOGgxLjEwOFY5LjU5OHoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTc1LjAzMywxMS4wN2MwLDAuNjk2LTAuMTk4LDEuMjY4LTAuNTk2LDEuNzE1Yy0wLjQxNywwLjQ2LTAuOTcsMC42OS0xLjY1OSwwLjY5DQoJCQljLTAuNjY1LDAtMS4xOTQtMC4yMjEtMS41ODktMC42NjJjLTAuMzk2LTAuNDQxLTAuNTkyLTAuOTk4LTAuNTkyLTEuNjY4YzAtMC43MDIsMC4yMDMtMS4yNzcsMC42MS0xLjcyNA0KCQkJYzAuNDA2LTAuNDQ3LDAuOTU1LTAuNjcxLDEuNjQ1LTAuNjcxYzAuNjY1LDAsMS4xOTksMC4yMjEsMS42MDQsMC42NjJDNzQuODQxLDkuODQsNzUuMDMzLDEwLjM5Myw3NS4wMzMsMTEuMDd6IE03My45ODksMTEuMTAzDQoJCQljMC0wLjQxNy0wLjA5LTAuNzc1LTAuMjctMS4wNzVjLTAuMjEyLTAuMzYxLTAuNTEzLTAuNTQyLTAuOTA0LTAuNTQyYy0wLjQwNCwwLTAuNzEyLDAuMTgxLTAuOTIzLDAuNTQyDQoJCQljLTAuMTgsMC4yOTktMC4yNzEsMC42NjQtMC4yNzEsMS4wOTNjMCwwLjQxOCwwLjA5MSwwLjc3NiwwLjI3MSwxLjA3NWMwLjIxOCwwLjM2MSwwLjUyMiwwLjU0MiwwLjkxMywwLjU0Mg0KCQkJYzAuMzg2LDAsMC42ODctMC4xODQsMC45MDQtMC41NTFDNzMuODk2LDExLjg4Miw3My45ODksMTEuNTIsNzMuOTg5LDExLjEwM3oiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTgwLjI5OSwxMy4zNzJoLTEuMDA2di0yLjU5NGMwLTAuOC0wLjMwNS0xLjItMC45MTQtMS4yYy0wLjI5OCwwLTAuNTQsMC4xMS0wLjcyNywwLjMzMQ0KCQkJYy0wLjE4NywwLjIyLTAuMjc5LDAuNDc5LTAuMjc5LDAuNzc2djIuNjg3aC0xLjAwN3YtMy4yMzRjMC0wLjM5OC0wLjAxMy0wLjgzLTAuMDM3LTEuMjk1aDAuODg1bDAuMDQ3LDAuNzA4aDAuMDI4DQoJCQljMC4xMTgtMC4yMiwwLjI5Mi0wLjQwMiwwLjUyMS0wLjU0N2MwLjI3My0wLjE2OSwwLjU3OC0wLjI1NCwwLjkxNC0wLjI1NGMwLjQyMiwwLDAuNzczLDAuMTM3LDEuMDUzLDAuNDENCgkJCWMwLjM0OCwwLjMzNSwwLjUyMSwwLjgzNSwwLjUyMSwxLjVWMTMuMzcyeiIvPg0KCTwvZz4NCgk8Zz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTQ3LjA0NiwxOS4wNGMwLDAuMzgyLTAuMTI1LDAuNjkxLTAuMzc1LDAuOTI4Yy0wLjI1LDAuMjM3LTAuNTczLDAuMzU1LTAuOTY4LDAuMzU1DQoJCQljLTAuMzU1LDAtMC42NTUtMC4xMjItMC44OTktMC4zNjVzLTAuMzY1LTAuNTQ5LTAuMzY1LTAuOTE4YzAtMC4zNjgsMC4xMjUtMC42NzEsMC4zNzUtMC45MDhjMC4yNS0wLjIzNywwLjU1OS0wLjM1NSwwLjkyOC0wLjM1NQ0KCQkJYzAuMzY4LDAsMC42NzgsMC4xMTgsMC45MjgsMC4zNTVDNDYuOTIxLDE4LjM2OCw0Ny4wNDYsMTguNjcxLDQ3LjA0NiwxOS4wNHogTTQ2LjgwOSwzMS41MDJoLTIuMTMzdi05LjU5OWgyLjEzM1YzMS41MDJ6Ii8+DQoJCTxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik01OC4yODMsMTkuOTg4aC0zLjgxMXYxMS41MTRoLTIuMTMzVjE5Ljk4OGgtMy43OTJWMTguMTloOS43MzZWMTkuOTg4eiIvPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNNjcuMTcxLDMxLjUwMmgtMS44NzZsLTAuMTE4LTEuNDYxaC0wLjA0Yy0wLjY3MiwxLjExOS0xLjY4NiwxLjY3OC0zLjA0MSwxLjY3OA0KCQkJYy0wLjk0OCwwLTEuNzA1LTAuMjk2LTIuMjcxLTAuODg5Yy0wLjY3Mi0wLjcyNC0xLjAwOC0xLjgxNi0xLjAwOC0zLjI3OHYtNS42NDhoMi4xMzR2NS4yOTNjMCwxLjg0NCwwLjYzMiwyLjc2NSwxLjg5NiwyLjc2NQ0KCQkJYzAuOTQ4LDAsMS42MDYtMC40NjEsMS45NzYtMS4zODJjMC4wOTItMC4yMzcsMC4xMzgtMC41MDcsMC4xMzgtMC44MXYtNS44NjZoMi4xMzN2Ni44MzMNCgkJCUM2Ny4wOTIsMjkuNjQ2LDY3LjExOCwzMC41NjcsNjcuMTcxLDMxLjUwMnoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTc4LjM5LDMxLjUwMmgtMi4xMzN2LTUuNDk2YzAtMS42OTUtMC42NDYtMi41NDItMS45MzYtMi41NDJjLTAuNjMzLDAtMS4xNDYsMC4yMzMtMS41NDEsMC42OTkNCgkJCWMtMC4zOTUsMC40NjYtMC41OTMsMS4wMTUtMC41OTMsMS42NDZ2NS42OTNoLTIuMTMzdi02Ljg1NGMwLTAuODQyLTAuMDI2LTEuNzU4LTAuMDc5LTIuNzQ1aDEuODc3bDAuMDk5LDEuNTAxaDAuMDU5DQoJCQljMC4yNS0wLjQ2NywwLjYxOS0wLjg1NCwxLjEwNi0xLjE1OGMwLjU3OS0wLjM2LDEuMjI1LTAuNTQsMS45MzYtMC41NGMwLjg5NiwwLDEuNjM5LDAuMjksMi4yMzEsMC44NjkNCgkJCWMwLjczNywwLjcxMSwxLjEwNiwxLjc3MSwxLjEwNiwzLjE4VjMxLjUwMnoiLz4NCgkJPHBhdGggZmlsbD0iI0ZGRkZGRiIgZD0iTTg5LjI3MSwyNi4yNDhjMCwwLjM4My0wLjAyNiwwLjcwNS0wLjA3OSwwLjk2OWgtNi4zOTljMC4wMjYsMC45NDcsMC4zMzYsMS42NzIsMC45MjksMi4xNzINCgkJCWMwLjU0LDAuNDQ3LDEuMjM3LDAuNjcyLDIuMDk0LDAuNjcyYzAuOTQ3LDAsMS44MS0wLjE1MSwyLjU4Ny0wLjQ1NWwwLjMzNiwxLjQ4MmMtMC45MDksMC4zOTUtMS45ODIsMC41OTItMy4yMiwwLjU5Mg0KCQkJYy0xLjQ4NywwLTIuNjU2LTAuNDM4LTMuNTA1LTEuMzEzYy0wLjg1LTAuODc2LTEuMjc0LTIuMDUtMS4yNzQtMy41MjVjMC0xLjQ0OCwwLjM5Ni0yLjY1MywxLjE4Ni0zLjYxNA0KCQkJYzAuODI5LTEuMDI3LDEuOTQ4LTEuNTQxLDMuMzU3LTEuNTQxYzEuMzgyLDAsMi40MjksMC41MTMsMy4xNCwxLjU0MUM4OC45ODgsMjQuMDQzLDg5LjI3MSwyNS4wNTEsODkuMjcxLDI2LjI0OHogTTg3LjIzNywyNS42OTUNCgkJCWMwLjAxMy0wLjYzMi0wLjEyNi0xLjE3OC0wLjQxNS0xLjYzOWMtMC4zNjktMC41OTMtMC45MzUtMC44ODktMS42OTgtMC44ODljLTAuNjk4LDAtMS4yNjUsMC4yODktMS42OTgsMC44NjkNCgkJCWMtMC4zNTYsMC40NjEtMC41NjYsMS4wMTQtMC42MzMsMS42NThIODcuMjM3eiIvPg0KCQk8cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNOTcuNTA4LDI4Ljc0NGMwLDAuODkzLTAuMzI5LDEuNjA5LTAuOTg3LDIuMTQ3Yy0wLjY1OSwwLjUzOC0xLjU2NywwLjgwOC0yLjcyNiwwLjgwOA0KCQkJYy0xLjA5NCwwLTIuMDIxLTAuMjE3LTIuNzg1LTAuNjUxbDAuNDU0LTEuNThjMC43MzcsMC40NDgsMS41MjEsMC42NzEsMi4zNTEsMC42NzFjMS4wOTMsMCwxLjYzOS0wLjQsMS42MzktMS4yMDQNCgkJCWMwLTAuMzU1LTAuMTE4LTAuNjQ4LTAuMzU1LTAuODc5Yy0wLjIzNi0wLjIzLTAuNjU4LTAuNDU4LTEuMjY0LTAuNjgyYy0xLjcxMi0wLjYzMi0yLjU2Ny0xLjU1NC0yLjU2Ny0yLjc2NQ0KCQkJYzAtMC44MywwLjMxNi0xLjUyMSwwLjk0OC0yLjA3NHMxLjQ2OC0wLjgyOSwyLjUwOC0wLjgyOWMwLjk0OCwwLDEuNzU4LDAuMTkzLDIuNDMsMC41OGwtMC40NTQsMS41MzMNCgkJCWMtMC42MTktMC4zNjgtMS4yNzEtMC41NTQtMS45NTYtMC41NTRjLTAuNDQ3LDAtMC43OTcsMC4xMDUtMS4wNDYsMC4zMTZjLTAuMjUxLDAuMjA5LTAuMzc2LDAuNDc5LTAuMzc2LDAuODA3DQoJCQljMCwwLjMyOSwwLjEzMiwwLjU5OSwwLjM5NiwwLjgwOWMwLjIyNCwwLjE5NywwLjY1OCwwLjQxNCwxLjMwNCwwLjY1Qzk2LjY3OCwyNi40NzksOTcuNTA4LDI3LjQ0Myw5Ny41MDgsMjguNzQ0eiIvPg0KCTwvZz4NCjwvZz4NCjwvc3ZnPg0K);
+}
+
+.mw-ajax-loader {
+    background-image: url(data:image/gif;base64,R0lGODlhIAAgAOMAAP///wAAAMbGxoSEhLa2tpqamjY2NlZWVtjY2OTk5Ly8vB4eHgQEBP///////////yH/C05FVFNDQVBFMi4wAwEAAAAh+QQFCgAPACwAAAAAIAAgAAAE5/DJSWlhperN52JLhSSdRgwVo1ICQZRUsiwHpTJT4iowNS8vyW2icCF6k8HMMBk+EDskxTBDPZwuAkkqIfxIQyhBQBFvHwSDITM5VDW6XNE4KagNh6Bgwe60smQUB3d4Rz1ZBApnFASDd0hihh12BkE9kjAJVlycXIg7CQIFA6SlnJ87paqbSKiKoqusnbMdmDC2tXQlkUhziYtyWTxIfy6BE8WJt5YJvpJivxNaGmLHT0VnOgSYf0dZXS7APdpB309RnHOG5g/qXGLDaC457D1zZ/V/nmOM82XiHRLYKhKP1oZmADdEAAAh+QQFCgAPACwAAAAAGAAXAAAEcvDJSesiNetplqlDsYnUYlIGw2jGV55SoS5sq0wmLS3qoBWtAw42mG0ehxYp90CoGKRNy8U8qFzNweCGwlJkgolCq0VIEAbMkUIghxLrDcLti2/Gg7D9qN774wkKBIOEfw+ChIV/gYmDho+QkZKTR3p7EQAh+QQFCgAPACwBAAAAHQAOAAAEcvDJSScxNev9jjkZwU2IUhkodSzLKA2DOKGYRLD1CA/InEoGlkui2PlyuKGkADM9aI8EayGbJDYI4zM1YIEmAwajkCAoehNmTNNaLsQMHmGuuEYHgpHAAGfUBHNzeUp9VBQJCoFOLmFxWHNoQweRWEocEQAh+QQFCgAPACwHAAAAGQARAAAEavDJ+cQQNOtdRsnf9iRINpyZYYgEgU3nQKnr1hIJjEqHGmqIlkInexRUB5FE0So9YhKaUpK4SaAPlWaxIFAETQ3B4BxzF2Kn8nBeJKebdm3SgksKXDt8kNP7/xoMgoMLP36DiAyAD4kMhREAIfkEBQoADwAsDgAAABIAGAAABGUQFfSqvZiUghXF1cZZxTCA4WYh5omKVqugD/woLV2rT/u9KoJpFDIYaIJBwnIwGogoivOoq0wPs6r1qe16v5WFeEzVjc+LKnphIIC9g193wGC4uvX6Aoo05BllVQULeXdadAxuEQAh+QQFCgAPACwOAAAAEgAeAAAEgDCp9Kq9WBGFBb5ECBbFV4XERaYmahGk14qPQJbm4z53foq2AquiGAwQJsQQYTRyfIlCc4DzTY8+i8CZxQy74KxhTD58P+S0Qaw+hN8WyruwWMDrdcM5ecAv3CYDDDIEBngmBwwMaxeGJgmKDFVdggx2bwuKA28EkXAGinJhVCYRACH5BAUKAA8ALA8AAQARAB8AAAR88Mn5UKIYC0KyT5ziZQqHjBQSohRHXGzFCSkHU/eTlCa7uTSUi6DIeVSEU0yiXDo9g6i0EIRKr6hrlPrsOgkGQ8EZDh+eZcOosKAcymPKYLE4TwphCWMvoS86HnsME3RqgXwSBnQjghR+h4MTB4sZjRiAGAsMbU4FDHFLEQAh+QQFCgAPACwIAA4AGAASAAAEbPDJSesjOKtk+8yg4nkgto1oihIqKgyD2FpwjcxUUtRDMROG2wPBkz0EjEHHYKgoYMKHgcE4PBZYCbM5KlAZHOxCUmBaPQuq8pqVHJg+GnUsEVO2nTQjzqZPmB1UXHVtE3wVOxUGC4M4H34qEQAh+QQFCgAPACwCABIAHQAOAAAEePDJSat96FJ0tEUEkV0DwwwepYSEklDEYpopJbCEIBkzY+geweD1SKxCiJJpUZAgmBbCYNCcIFaJggk1OSwWKINYMh2MLMRJ7LsbPxTl2sTAbhsmhalC/vje7VZxNXQLBHNuEnlcKV8dh38TCmcehhUHBo58cpA1EQAh+QQFCgAPACwAAA8AGQARAAAEZ7AsRuu7OOtbO9tgJnlfaJ7omQwpuixFCxrvK2dHvRwoQmw1w+8i3PgIggzBpjEYLoPohUBNoJzPR5T1OCpOB2dMK70oqIhQwcmDlh8J6nCDzWwzAmrIqblnEFZqGgUDYzcaAgNJGxEAIfkEBQoADwAsAQAIABEAGAAABFyQMDaevfiOyVbJ4GNwjCGEWLGQaLZRbYZUcW3feK7vaGEYNsXh96sRgYiW73e4JAYn0O9zKQwGhAdhi5pdLdts6DpQgLkgBfkSHl+TZ7ELi2mDEHKLgmC+JRQJEQAh+QQFCgAPACwAAAIADgAdAAAEcvDJ+cqgeDJmMt4M4U3DtozTsl1oASJpRxnbkS6LIT4Cw0oHHO4A8xAMwhPqgSssH4nnknAwWK+Zq1ZGoW650vAOpRgMBCOEee2xrAtRTNlcQEsI8Yd6oKAICARFHgmAYx4KgIIZCIB9ZIB5RgR2KAmKEQA7);
+	/*background-image: url(/resources/src/mediawiki.legacy/images/ajax-loader.gif?2015-03-31T18:45:00Z) !ie;*/
+    background-position: center center;
+    background-repeat: no-repeat;
+    padding: 16px;
+    position: relative;
+}
