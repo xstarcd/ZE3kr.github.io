@@ -2,7 +2,7 @@
 layout: post
 title:  "Bird looking at my GoPro"
 subtitle: no
-image: photo/2015/thrideo6/4.jpg
+image: ze3kr/2015/_KR_7613.jpg
 exif: yes
 
 
