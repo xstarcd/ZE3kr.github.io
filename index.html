@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Thrideo
+title: ZE3kr
 show: no
 allphoto: ture
 notpost: yes
@@ -13,9 +13,11 @@ isvideo: yes
 		{% for post in paginator.posts %}
 		<li class="post">
 			<a class="post-date" href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}"><span title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d %Y" }}</span> {% if post.title %}<span class="post-link">{{ post.title }}</span>{% endif %}</a>
+			{% if post.image %}
 			<a href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}">
 				<img src="{{ site.photo-server-domain | replace:'http://','//' }}{{ post.image }}!1x" srcset="{{ site.photo-server-domain | replace:'http://','//' }}{{ post.image }}!2x 2x" class="img-photo" alt="{{ post.title }}" />
 			</a>
+			{% endif %}
 			{{ post.content }}
 		</li>
 		{% endfor %}

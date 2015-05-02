@@ -12,14 +12,13 @@ layout: none
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
     {% for post in site.posts limit:20 %}
+	{% if post.image %}
       <item>
         <title>{{ post.title | xml_escape }}</title>
 				<description>
 				<![CDATA[
 					{{ post.content | cdata_escape }}
-					{% if post.image %}
 					<img src="{{ site.photo-server-domain }}{{ post.image }}!b" />
-					{% endif %}
 				]]>
 				</description>
         <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
@@ -37,6 +36,7 @@ layout: none
         <category>{{ cat | xml_escape }}</category>
         {% endfor %}
       </item>
+	{% endif %}
     {% endfor %}
   </channel>
 </rss>
