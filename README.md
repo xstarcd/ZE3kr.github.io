@@ -1,2 +1,3 @@
-Thrideo
+ZE3kr.com
 ===============
+My blog
