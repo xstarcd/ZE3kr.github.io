@@ -9,13 +9,14 @@ isvideo: yes
 ---
 
 <div class="home">
-	<ul class="posts" style="text-align: center;">
+	<ul class="posts">
 		{% for post in paginator.posts %}
 		<li class="post">
-			<a class="post-date" href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}"><span title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d %Y" }}</span> {% if post.title %}<span class="post-link" style="font-size: 18px;">{{ post.title }}</span>{% endif %}</a>
-			<a href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}" title="Play">
+			<a class="post-date" href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}"><span title="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d %Y" }}</span> {% if post.title %}<span class="post-link">{{ post.title }}</span>{% endif %}</a>
+			<a href="{{ post.url | prepend: site.github.url | replace:'http://','//' }}">
 				<img src="{{ site.photo-server-domain | replace:'http://','//' }}{{ post.image }}!1x" srcset="{{ site.photo-server-domain | replace:'http://','//' }}{{ post.image }}!2x 2x" class="img-photo" alt="{{ post.title }}" />
 			</a>
+			{{ post.content }}
 		</li>
 		{% endfor %}
 	</ul>
