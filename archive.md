@@ -2,6 +2,9 @@
 layout: page
 title: Archive
 notpost: yes
+permalink: /archive.html
+redirect_from:
+  - /archive/
 ---
 
 <ul>
