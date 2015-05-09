@@ -16,6 +16,7 @@ layout: default
 		{% if page.exif %}
 		<div id="exif"><div class="mw-ajax-loader" style="background-position: left"></div></div>
 		<script defer type="text/javascript" src="{{ site.photo-exif-domain | replace:'http://','//' }}{{ page.image }}!exif.json-js"></script>
+		<script type="text/javascript" src="{{ site.photo-exif-domain | replace:'http://','//' }}{{ page.image }}!exif.json-js"></script>
 		{% endif %}
 		<hr />
 
