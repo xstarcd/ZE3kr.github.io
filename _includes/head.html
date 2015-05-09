@@ -12,9 +12,6 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="//tlumn.b0.upaiyun.com/ze3kr/main.css">
 	<script async type="text/javascript" src="//tlumn.b0.upaiyun.com/chinajs/jquery/jquery-2.0.min.js"></script>
-	{% if page.exif %}
-	<script defer type="text/javascript" src="{{ site.photo-exif-domain | replace:'http://','//' }}{{ page.image }}!exif.json-js"></script>
-	{% endif %}
 	<style type="text/css">
 		.site-header {
 			border-top: 5px solid {{ site.data.color.header.top }};
