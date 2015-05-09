@@ -1,6 +1,7 @@
 video-server-domain: "http://tlumn.b0.upaiyun.com/"
 sd-video-server-domain: "http://tlumn.b0.upaiyun.com/"
-photo-server-domain: "http://imgcdn.tlum.net/"
+photo-server-domain: "http://tlimage.b0.upaiyun.com/"
+photo-exif-domain: "http://imgcdn.tlum.net/"
 
 # 网页设置
 title: "ZE3kr"
