@@ -5,6 +5,8 @@ permalink: /readme.html
 ---
 ZE3kr.com
 ===============
+The raw file [is here](https://github.com/ZE3kr/ze3kr.com)
+
 It's my blog
 
 - Hosted on GitHub
