@@ -13,10 +13,29 @@ copyright: CC BY-NC-SA 3.0.
 copyright_link: https://creativecommons.org/licenses/by-nc-sa/3.0/
 
 markdown: kramdown
-permalink: /:year/:month/:title.html
+permalink: /:year/:month/:title/
 
 paginate: 15
 paginate_path: "page/:num/"
 
 gems:
   - jekyll-redirect-from
+  - jekyll-archives
+
+jekyll-archives:
+  enabled: 
+  - year
+  - month
+  - categories
+
+  layouts: 
+    categories: archive
+    month: archive-month
+    year: archive-year
+
+  permalinks:
+    year: '/:year/'
+    month: '/:year/:month/'
+    day: '/:year/:month/:day/'
+    tag: '/tag/:name/'
+    category: '/category/:name/'

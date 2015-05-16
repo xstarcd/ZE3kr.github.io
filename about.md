@@ -1,9 +1,7 @@
 ---
 layout: page
 title: About me
-permalink: /about.html
-redirect_from:
-  - /about/
+permalink: /about/
 ---
 Hi, I'm ZE3kr, a website designer. I'm also a amateur publisher, photographer. I love technology and mathematic, but I don't have time to do research on it. I'm a Chinese, so I'm good at speak [Chinglish](http://en.wikipedia.org/wiki/Chinglish). 
 

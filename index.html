@@ -18,7 +18,7 @@ isvideo: yes
 				<img src="{{ site.photo-server-domain | replace:'http://','//' }}{{ post.image }}!1x" srcset="{{ site.photo-server-domain | replace:'http://','//' }}{{ post.image }}!2x 2x" class="img-photo" alt="{{ post.title }}" />
 			</a>
 			{% endif %}
-			{{ post.content }}
+			{{ post.content | strip_html | strip_newlines | truncate: 160 }}
 		</li>
 		{% endfor %}
 	</ul>

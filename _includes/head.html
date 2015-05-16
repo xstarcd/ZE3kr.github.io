@@ -3,8 +3,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>{{ page.title }}{% if paginator.previous_page %} (Page {{ paginator.page }}){% endif %}{% if page.title %}{% if page.nositename %}{% else %} | {% endif %}{% endif %}{% if page.nositename %}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    {% if page.subtitle %}<meta name="description" content="{{ page.subtitle }}">{% else %}<meta name="description" content="{{ site.description }}">{% endif %}
-    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.github.url }}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <link rel="canonical" href="{{ page.url | prepend: site.github.url | replace:'index.html','' }}">
     <link rel="shortcut icon" href="/favicon.ico">
     <link rel="apple-touch-icon-precomposed" href="{{ site.small-avatarurl }}">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
