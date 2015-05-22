@@ -1,4 +1,4 @@
-Sitemap: http://v.ze3kr.com/sitemap.xml
+Sitemap: http://ze3kr.com/sitemap.xml
 
 User-agent: *
 Disallow: /frame
