@@ -16,7 +16,7 @@ layout: default
 		{% endif %}
 		{{ content }}
 		{% if page.exif %}
-		<div id="exif"><div class="mw-ajax-loader" style="background-position: left"></div></div>
+		<ul><div id="exif"><div class="mw-ajax-loader" style="background-position: left"></div></div>{% if page.exif.hdr == "yes" %}<li><b>HDR is enabled.</b></li>{% endif %}</ul>
 		{% endif %}
 		<hr />
 

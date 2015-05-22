@@ -10,7 +10,7 @@
 	  <div class="footer-col-1 column">
 		  <ul>
 			  <li>File is hosted on <a href="https://www.upyun.com/" target="_blank"><img src="{{ site.photo-server-domain | replace:'http://','//' }}upyun/90.png" srcset="{{ site.photo-server-domain | replace:'http://','//' }}upyun/180.png 2x" alt="UPYUN" style="width: 90px"></a></li>
-			  <li><iframe src="https://tlumn.b0.upaiyun.com/github-button/github-btn-sharp.html#user={{ site.github.owner_name }}&repo={{ site.github.project_title }}&type=star&count=true" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
+			  <li><iframe src="https://tlumn.b0.upaiyun.com/github-button/github-btn-sharp.html#user={{ site.github.owner_name }}&repo={{ site.github.project_title }}&type=star&count=false" frameborder="0" scrolling="0" width="170px" height="20px"></iframe></li>
 			  <li>
 				  {% if page.copyright %}{% if page.copyright_link %}<a href="{{ page.copyright_link }}">{% endif %}&#xA9;ZE3kr. {{ page.copyright | xml_escape }}{% if page.copyright_link %}</a>{% endif %}
 				  {% else %}{% if site.copyright_link %}<a href="{{ site.copyright_link }}">{% endif %}&#xA9;ZE3kr. {{ site.copyright | xml_escape }}{% if site.copyright_link %}</a>{% endif %}{% endif %}
