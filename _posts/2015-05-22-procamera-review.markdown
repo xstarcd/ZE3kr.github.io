@@ -14,6 +14,8 @@ tag:
 ------
 这个软件内置自己的 HDR，完全不同于系统的 HDR 功能，它的 HDR 堪比在单反上拍出的照片在 PhotoShop 自动HDR 上合成后的效果，十分出彩。并且有多种 HDR 格式可供选择，而且可以进行手动 HDR，自己调整 HDR 的亮度，满足所有需求。(HDR 功能需要单独购买)
 
+{% include img-small.html title="对比样张" img="IMG_0187.JPG" %}
+
 {% include img-small.html title="实拍样张" img="IMG_0038.JPG" %}
 
 灯箱功能
