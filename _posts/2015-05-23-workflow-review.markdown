@@ -18,7 +18,7 @@ Workflow 是一个 iOS 软件，使用起来类似于 Mac 上内置的 Automator
 + 将视频调到 15 倍速，同时压缩，并保存到相册中。
 + 自动使用 Uber 叫一个司机带你回家。
 {% include img-small.html img="IMG_0192.PNG" %}
-{% include img-small.html title="title" img="IMG_0186.PNG" %}
+{% include img-small.html img="IMG_0186.PNG" %}
 
 与 Launch Center Pro 对比
 ------
@@ -30,12 +30,12 @@ Workflow 更适合处理更多的步骤，比如说它拥有 if else 条件语�
 支持 iOS 8 Extensions
 ------
 通过iOS内置的分享表单，可以一个链接、图片、视频、文件、文本等一切内容作为输入去运行一个任务，快速实现所需要的功能。
-{% include img-small.html title="title" img="IMG_0194.PNG" %}
+{% include img-small.html img="IMG_0194.PNG" %}
 
 添加到主屏幕
 ------
 可以将 Workflow 添加到主屏幕，快速执行一个任务，例如 GIF 制作。
-{% include img-small.html title="title" img="IMG_0195.PNG" %}
+{% include img-small.html img="IMG_0195.PNG" %}
 
 支持 Apple Watch
 ------
